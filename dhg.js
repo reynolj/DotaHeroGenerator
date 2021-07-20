@@ -44,17 +44,17 @@ const attributeColor = new Map([
 ]);
 
 const attributeImage = new Map([
-    [STR, 'https://static.wikia.nocookie.net/dota2_gamepedia/images/7/7a/Strength_attribute_symbol.png/revision/latest?cb=20180323111829'],
-    [AGI, 'https://static.wikia.nocookie.net/dota2_gamepedia/images/2/2d/Agility_attribute_symbol.png/revision/latest?cb=20180323111717'],
-    [INT, 'https://static.wikia.nocookie.net/dota2_gamepedia/images/5/56/Intelligence_attribute_symbol.png/revision/latest?cb=20180323111753']
+    [STR, `./assets/attributes/strength.png`],
+    [AGI, `./assets/attributes/agility.png`],
+    [INT, `./assets/attributes/intelligence.png`]
 ]);
 
 class Hero{
-    constructor(heroName, wikiLink, attribute, thumbnail, lore, attackType){
+    constructor(id, heroName, wikiLink, attribute, lore, attackType){
+        this.id = id;
         this.heroName = heroName;
         this.wikiLink = wikiLink;
         this.attribute = attribute;
-        this.thumbnail = thumbnail;
         this.lore = lore;
         this.attackType = attackType;
     }
@@ -71,10 +71,10 @@ function onLoad(){
     let i = 0
     while(i < heroList.length){
         var hero = new Hero(
+            heroList[i].id,
             heroList[i].name,
             heroList[i].wikiLink,
             heroList[i].attribute,
-            heroList[i].thumbnail,
             heroList[i].lore,
             heroList[i].attackType
         )
@@ -104,8 +104,8 @@ function processCommand(receivedMessage) {
     } 
     else if (primaryCommand == "random") {
         randomCommand(arguments, receivedMessage)
-    // } else if (primaryCommand == "createJSON") {
-    //     createJSON(arguments, receivedMessage)
+    // } else if (primaryCommand == "download") {
+    //     downloadCommand(arguments, receivedMessage)
     } 
     else {
         receivedMessage.channel.send("Unknown command. Try `!help`")
@@ -151,13 +151,17 @@ function randomCommand(arguments, receivedMessage) {
         })
 
         heroList.forEach(hero => {
+            const footerImg = new Discord.MessageAttachment(attributeImage.get(hero.attribute), "attribute.png")
+            const heroImg = new Discord.MessageAttachment(`./assets/thumbnails/${hero.id}.png`, "hero.png")
             let embedMsg = new Discord.MessageEmbed()
                 .setColor(attributeColor.get(hero.attribute))
                 .setTitle(hero.heroName)
-                .setURL(hero.wikiLink)
                 .setDescription(hero.lore)
-                .setThumbnail(hero.thumbnail)
-                .setFooter(hero.attackType, attributeImage.get(hero.attribute))
+                .setURL(hero.wikiLink)
+                .setThumbnail('attachment://hero.png')
+                .attachFiles(footerImg)
+                .attachFiles(heroImg)
+                .setFooter(hero.attackType, 'attachment://attribute.png')
             receivedMessage.channel.send(embedMsg)
         })
     }
@@ -168,15 +172,17 @@ function randomCommand(arguments, receivedMessage) {
             var hero = randomHero(attribute)
 
             // console.log(`${JSON.stringify(hero.heroName)}`)
-
+            const footerImg = new Discord.MessageAttachment(attributeImage.get(hero.attribute), "attribute.png")
+            const heroImg = new Discord.MessageAttachment(`./assets/thumbnails/${hero.id}.png`, "hero.png")
             let embedMsg = new Discord.MessageEmbed()
                 .setColor(attributeColor.get(hero.attribute))
                 .setTitle(hero.heroName)
                 .setDescription(hero.lore)
                 .setURL(hero.wikiLink)
-                .setThumbnail(hero.thumbnail)
-                .setFooter(hero.attackType, attributeImage.get(hero.attribute))
-
+                .setThumbnail('attachment://hero.png')
+                .attachFiles(footerImg)
+                .attachFiles(heroImg)
+                .setFooter(hero.attackType, 'attachment://attribute.png')
             receivedMessage.channel.send(embedMsg)
         }
         else{
@@ -193,22 +199,30 @@ function randomCommand(arguments, receivedMessage) {
             // console.log(`${JSON.stringify(hero1.heroName)}`)
             // console.log(`${JSON.stringify(hero2.heroName)}`)
 
+            let footerImg = new Discord.MessageAttachment(attributeImage.get(hero1.attribute), "attribute.png")
+            let heroImg = new Discord.MessageAttachment(`./assets/thumbnails/${hero1.id}.png`, "hero.png")
             let embedMsg = new Discord.MessageEmbed()
                 .setColor(attributeColor.get(hero1.attribute))
                 .setTitle(hero1.heroName)
-                .setURL(hero1.wikiLink)
                 .setDescription(hero1.lore)
-                .setThumbnail(hero1.thumbnail)
-                .setFooter(hero1.attackType, attributeImage.get(hero1.attribute))
+                .setURL(hero1.wikiLink)
+                .setThumbnail('attachment://hero.png')
+                .attachFiles(footerImg)
+                .attachFiles(heroImg)
+                .setFooter(hero1.attackType, 'attachment://attribute.png')
             receivedMessage.channel.send(embedMsg)
 
+            footerImg = new Discord.MessageAttachment(attributeImage.get(hero2.attribute), "attribute.png")
+            heroImg = new Discord.MessageAttachment(`./assets/thumbnails/${hero2.id}.png`, "hero.png")
             embedMsg = new Discord.MessageEmbed()
                 .setColor(attributeColor.get(hero2.attribute))
                 .setTitle(hero2.heroName)
-                .setURL(hero2.wikiLink)
                 .setDescription(hero2.lore)
-                .setThumbnail(hero2.thumbnail)
-                .setFooter(hero2.attackType, attributeImage.get(hero2.attribute))
+                .setURL(hero2.wikiLink)
+                .setThumbnail('attachment://hero.png')
+                .attachFiles(footerImg)
+                .attachFiles(heroImg)
+                .setFooter(hero2.attackType, 'attachment://attribute.png')
             receivedMessage.channel.send(embedMsg)
         }
         else{
@@ -266,4 +280,29 @@ function randomCommand(arguments, receivedMessage) {
 //         this.attributeImage = 'https://static.wikia.nocookie.net/dota2_gamepedia/images/7/7a/Strength_attribute_symbol.png/revision/latest?cb=20180323111829';
 //         Hero.call(this, heroName, wikiLink, thumbnail, lore, attackType)
 //     }
+// }
+
+// function downloadCommand(){
+//     var fs = require('fs'),
+//     request = require('request');
+
+//     var download = function(uri, filename, callback){
+//     request.head(uri, function(err, res, body){
+//         console.log('content-type:', res.headers['content-type']);
+//         console.log('content-length:', res.headers['content-length']);
+
+//         request(uri).pipe(fs.createWriteStream(filename)).on('close', callback);
+//     });
+//     };
+
+
+//     download('https://static.wikia.nocookie.net/dota2_gamepedia/images/7/7a/Strength_attribute_symbol.png/revision/latest?cb=20180323111829', `./assets/attributes/strength.png`, function(){
+//         console.log(`created`);
+//     })
+//     download('https://static.wikia.nocookie.net/dota2_gamepedia/images/2/2d/Agility_attribute_symbol.png/revision/latest?cb=20180323111717', `./assets/attributes/agility.png`, function(){
+//         console.log(`created`);
+//     })
+//     download('https://static.wikia.nocookie.net/dota2_gamepedia/images/5/56/Intelligence_attribute_symbol.png/revision/latest?cb=20180323111753', `./assets/attributes/intelligence.png`, function(){
+//         console.log(`created`);
+//     })
 // }
