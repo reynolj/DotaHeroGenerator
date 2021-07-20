@@ -1,0 +1,1092 @@
+[
+    {
+        "id":1,
+        "name":"Abaddon",
+        "wikiLink":"https://dota2.fandom.com/wiki/Abaddon",
+        "attribute":"STRENGTH",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/2/26/Abaddon_icon.png/revision/latest/scale-to-width-down/256?cb=20210125060638",
+        "lore":"Lord of Avernus",
+        "attackType": "Melee"
+    },
+    {
+        "id":2,
+        "name":"Alchemist",
+        "wikiLink":"https://dota2.fandom.com/wiki/Alchemist",
+        "attribute":"STRENGTH",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/f/fe/Alchemist_icon.png/revision/latest/scale-to-width-down/256?cb=20160411210240",
+        "lore":"Razzil Darkbrew",
+        "attackType": "Melee"
+    },
+    {
+        "id":3,
+        "name":"Ancient Apparition",
+        "wikiLink":"https://dota2.fandom.com/wiki/Ancient_Apparition",
+        "attribute":"INTELLIGENCE",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/6/67/Ancient_Apparition_icon.png/revision/latest?cb=20160411220816",
+        "lore":"Kaldr",
+        "attackType": "Ranged"
+    },
+    {
+        "id":4,
+        "name":"Anti-Mage",
+        "wikiLink":"https://dota2.fandom.com/wiki/Anti-Mage",
+        "attribute":"AGILITY",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/8/8e/Anti-Mage_icon.png/revision/latest?cb=20200916215957",
+        "lore":"Turstarkuri Monk",
+        "attackType": "Melee"
+    },
+    {
+        "id":5,
+        "name":"Arc Warden",
+        "wikiLink":"https://dota2.fandom.com/wiki/Arc_Warden",
+        "attribute":"AGILITY",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/0/07/Arc_Warden_icon.png/revision/latest?cb=20160411214723",
+        "lore":"Zet",
+        "attackType": "Ranged"
+    },
+    {
+        "id":6,
+        "name":"Axe",
+        "wikiLink":"https://dota2.fandom.com/wiki/Axe",
+        "attribute":"STRENGTH",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/2/23/Axe_icon.png/revision/latest?cb=20160411211422",
+        "lore":"Mogul Khan",
+        "attackType": "Melee"
+    },
+    {
+        "id":7,
+        "name":"Bane",
+        "wikiLink":"https://dota2.fandom.com/wiki/Bane",
+        "attribute":"INTELLIGENCE",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/c/c3/Bane_icon.png/revision/latest?cb=20160411215925",
+        "lore":"Atropos",
+        "attackType": "Ranged"
+    },
+    {
+        "id":8,
+        "name":"Batrider",
+        "wikiLink":"https://dota2.fandom.com/wiki/Batrider",
+        "attribute":"INTELLIGENCE",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/f/f2/Batrider_icon.png/revision/latest?cb=20160411220708",
+        "lore":"Wannabe Cowboy",
+        "attackType": "Ranged"
+    },
+    {
+        "id":9,
+        "name":"Beastmaster",
+        "wikiLink":"https://dota2.fandom.com/wiki/Beastmaster",
+        "attribute":"STRENGTH",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/d/d9/Beastmaster_icon.png/revision/latest?cb=20160411205834",
+        "lore":"Karroch",
+        "attackType": "Melee"
+    },
+    {
+        "id":10,
+        "name":"Bloodseeker",
+        "wikiLink":"https://dota2.fandom.com/wiki/Bloodseeker",
+        "attribute":"AGILITY",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/5/56/Bloodseeker_icon.png/revision/latest?cb=20160411213712",
+        "lore":"Strygwyr",
+        "attackType": "Melee"
+		
+    },
+    {
+        "id":11,
+        "name":"Bounty Hunter",
+        "wikiLink":"https://dota2.fandom.com/wiki/Bounty_Hunter",
+        "attribute":"AGILITY",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/a/a6/Bounty_Hunter_icon.png/revision/latest?cb=20160411213244",
+        "lore":"Gondar",
+        "attackType": "Melee"
+    },
+    {
+        "id":12,
+        "name":"Bristleback",
+        "wikiLink":"https://dota2.fandom.com/wiki/Bristleback",
+        "attribute":"STRENGTH",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/4/4d/Bristleback_icon.png/revision/latest?cb=20160411210744",
+        "lore":"Rigwarl",
+        "attackType": "Melee"
+    },
+    {
+        "id":13,
+        "name":"Broodmother",
+        "wikiLink":"https://dota2.fandom.com/wiki/Broodmother",
+        "attribute":"AGILITY",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/d/df/Broodmother_icon.png/revision/latest?cb=20160411214142",
+        "lore":"Black Arachnia",
+        "attackType": "Melee"
+    },
+    {
+        "id":14,
+        "name":"Centaur Warrunner",
+        "wikiLink":"https://dota2.fandom.com/wiki/Centaur_Warrunner",
+        "attribute":"STRENGTH",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/e/ed/Centaur_Warrunner_icon.png/revision/latest?cb=20160411210603",
+        "lore":"Bradwarden",
+        "attackType": "Melee"
+    },
+    {
+        "id":15,
+        "name":"Chaos Knight",
+        "wikiLink":"https://dota2.fandom.com/wiki/Chaos_Knight",
+        "attribute":"STRENGTH",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/f/fe/Chaos_Knight_icon.png/revision/latest?cb=20160411212259",
+        "lore":"Chaos Fundamental",
+        "attackType": "Melee"
+    },
+    {
+        "id":16,
+        "name":"Chen",
+        "wikiLink":"https://dota2.fandom.com/wiki/Chen",
+        "attribute":"INTELLIGENCE",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/6/61/Chen_icon.png/revision/latest?cb=20160411215432",
+        "lore":"Holy Knight",
+        "attackType": "Ranged"
+    },
+    {
+        "id":17,
+        "name":"Clinkz",
+        "wikiLink":"https://dota2.fandom.com/wiki/Clinkz",
+        "attribute":"AGILITY",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/c/cb/Clinkz_icon.png/revision/latest?cb=20160411214114",
+        "lore":"Bone Fletcher",
+        "attackType": "Ranged"
+    },
+    {
+        "id":18,
+        "name":"Clockwerk",
+        "wikiLink":"https://dota2.fandom.com/wiki/Clockwerk",
+        "attribute":"STRENGTH",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/d/d8/Clockwerk_icon.png/revision/latest?cb=20160411210004",
+        "lore":"Rattletrap",
+        "attackType": "Melee"
+    },
+    {
+        "id":19,
+        "name":"Crystal Maiden",
+        "wikiLink":"https://dota2.fandom.com/wiki/Crystal_Maiden",
+        "attribute":"INTELLIGENCE",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/2/27/Crystal_Maiden_icon.png/revision/latest?cb=20160411214805",
+        "lore":"Rylai",
+        "attackType": "Ranged"
+    },
+    {
+        "id":20,
+        "name":"Dark Seer",
+        "wikiLink":"https://dota2.fandom.com/wiki/Dark_Seer",
+        "attribute":"INTELLIGENCE",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/c/c5/Dark_Seer_icon.png/revision/latest?cb=20160411220632",
+        "lore":"Ish'kafel",
+        "attackType": "Melee"
+    },
+    {
+        "id":21,
+        "name":"Dark Willow",
+        "wikiLink":"https://dota2.fandom.com/wiki/Dark_Willow",
+        "attribute":"INTELLIGENCE",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/3/3c/Dark_Willow_icon.png/revision/latest?cb=20180831204518",
+        "lore":"Mireska Sunbreeze",
+        "attackType": "Ranged"
+    },
+    {
+        "id":22,
+        "name":"Dawnbreaker",
+        "wikiLink":"https://dota2.fandom.com/wiki/Dawnbreaker",
+        "attribute":"STRENGTH",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/d/d6/Dawnbreaker_icon.png/revision/latest?cb=20210410124439",
+        "lore":"Valora",
+        "attackType": "Melee"
+    },
+    {
+        "id":23,
+        "name":"Dazzle",
+        "wikiLink":"https://dota2.fandom.com/wiki/Dazzle",
+        "attribute":"INTELLIGENCE",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/e/e6/Dazzle_icon.png/revision/latest?cb=20160411220519",
+        "lore":"Shadow Priest",
+        "attackType": "Ranged"
+    },
+    {
+        "id":24,
+        "name":"Death Prophet",
+        "wikiLink":"https://dota2.fandom.com/wiki/Death_Prophet",
+        "attribute":"INTELLIGENCE",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/d/d7/Death_Prophet_icon.png/revision/latest?cb=20160411220408",
+        "lore":"Krobelus",
+        "attackType": "Ranged"
+    },
+    {
+        "id":25,
+        "name":"Disruptor",
+        "wikiLink":"https://dota2.fandom.com/wiki/Disruptor",
+        "attribute":"INTELLIGENCE",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/9/97/Disruptor_icon.png/revision/latest?cb=20160411215651",
+        "lore":"Stormcrafter",
+        "attackType": "Ranged"
+    },
+    {
+        "id":26,
+        "name":"Doom",
+        "wikiLink":"https://dota2.fandom.com/wiki/Doom",
+        "attribute":"STRENGTH",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/4/40/Doom_icon.png/revision/latest?cb=20160411212104",
+        "lore":"Lucifer",
+        "attackType": "Melee"
+    },
+    {
+        "id":27,
+        "name":"Dragon Knight",
+        "wikiLink":"https://dota2.fandom.com/wiki/Dragon_Knight",
+        "attribute":"STRENGTH",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/5/59/Dragon_Knight_icon.png/revision/latest?cb=20160411205925",
+        "lore":"Davion",
+        "attackType": "Melee"
+    },
+    {
+        "id":28,
+        "name":"Drow Ranger",
+        "wikiLink":"https://dota2.fandom.com/wiki/Drow_Ranger",
+        "attribute":"AGILITY",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/8/80/Drow_Ranger_icon.png/revision/latest?cb=20190325143546",
+        "lore":"Traxex",
+        "attackType": "Ranged"
+    },
+    {
+        "id":29,
+        "name":"Earth Spirit",
+        "wikiLink":"https://dota2.fandom.com/wiki/Earth_Spirit",
+        "attribute":"STRENGTH",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/b/be/Earth_Spirit_icon.png/revision/latest?cb=20160411211247",
+        "lore":"Kaolin",
+        "attackType": "Melee"
+    },
+    {
+        "id":30,
+        "name":"Earthshaker",
+        "wikiLink":"https://dota2.fandom.com/wiki/Earthshaker",
+        "attribute":"STRENGTH",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/a/a5/Earthshaker_icon.png/revision/latest?cb=20160411205323",
+        "lore":"Raigor Stonehoof",
+        "attackType": "Melee"
+    },
+    {
+        "id":31,
+        "name":"Elder Titan",
+        "wikiLink":"https://dota2.fandom.com/wiki/Elder_Titan",
+        "attribute":"STRENGTH",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/1/1a/Elder_Titan_icon.png/revision/latest?cb=20160411210922",
+        "lore":"Worldsmith",
+        "attackType": "Melee"
+    },
+    {
+        "id":32,
+        "name":"Ember Spirit",
+        "wikiLink":"https://dota2.fandom.com/wiki/Ember_Spirit",
+        "attribute":"AGILITY",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/9/91/Ember_Spirit_icon.png/revision/latest?cb=20170417182614",
+        "lore":"Xin",
+        "attackType": "Melee"
+    },
+    {
+        "id":33,
+        "name":"Enchantress",
+        "wikiLink":"https://dota2.fandom.com/wiki/Enchantress",
+        "attribute":"INTELLIGENCE",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/4/41/Enchantress_icon.png/revision/latest?cb=20160411215320",
+        "lore":"Aiushtha",
+        "attackType": "Ranged"
+    },
+    {
+        "id":34,
+        "name":"Enigma",
+        "wikiLink":"https://dota2.fandom.com/wiki/Enigma",
+        "attribute":"INTELLIGENCE",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/f/f7/Enigma_icon.png/revision/latest?cb=20160411220156",
+        "lore":"Consumer of Worlds",
+        "attackType": "Ranged"
+    },
+    {
+        "id":35,
+        "name":"Faceless Void",
+        "wikiLink":"https://dota2.fandom.com/wiki/Faceless_Void",
+        "attribute":"AGILITY",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/7/73/Faceless_Void_icon.png/revision/latest?cb=20160411213936",
+        "lore":"Darkterror",
+        "attackType": "Melee"
+    },
+    {
+        "id":36,
+        "name":"Grimstroke",
+        "wikiLink":"https://dota2.fandom.com/wiki/Grimstroke",
+        "attribute":"INTELLIGENCE",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/d/d7/Grimstroke_icon.png/revision/latest?cb=20180831203927",
+        "lore":"Ichor Artist",
+        "attackType": "Ranged"
+    },
+    {
+        "id":37,
+        "name":"Gyrocopter",
+        "wikiLink":"https://dota2.fandom.com/wiki/Gyrocopter",
+        "attribute":"AGILITY",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/4/4f/Gyrocopter_icon.png/revision/latest?cb=20181101233643",
+        "lore":"Aurel",
+        "attackType": "Ranged"
+    },
+    {
+        "id":38,
+        "name":"Hoodwink",
+        "wikiLink":"https://dota2.fandom.com/wiki/Hoodwink",
+        "attribute":"AGILITY",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/c/c9/Hoodwink_icon.png/revision/latest?cb=20201217205959",
+        "lore":"Trickster",
+        "attackType": "Ranged"
+    },
+    {
+        "id":39,
+        "name":"Huskar",
+        "wikiLink":"https://dota2.fandom.com/wiki/Huskar",
+        "attribute":"STRENGTH",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/d/d3/Huskar_icon.png/revision/latest?cb=20160411210201",
+        "lore":"Sacred Warrior",
+        "attackType": "Ranged"
+    },
+    {
+        "id":40,
+        "name":"Invoker",
+        "wikiLink":"https://dota2.fandom.com/wiki/Invoker",
+        "attribute":"INTELLIGENCE",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/0/00/Invoker_icon.png/revision/latest?cb=20160411220849",
+        "lore":"Carl",
+        "attackType": "Ranged"
+    },
+    {
+        "id":41,
+        "name":"Io",
+        "wikiLink":"https://dota2.fandom.com/wiki/Io",
+        "attribute":"STRENGTH",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/8/8d/Io_icon.png/revision/latest?cb=20160411210451",
+        "lore":"Wisp",
+        "attackType": "Ranged"
+    },
+    {
+        "id":42,
+        "name":"Jakiro",
+        "wikiLink":"https://dota2.fandom.com/wiki/Jakiro",
+        "attribute":"INTELLIGENCE",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/2/2f/Jakiro_icon.png/revision/latest?cb=20170507134250",
+        "lore":"Twin Head Dragon",
+        "attackType": "Ranged"
+    },
+    {
+        "id":43,
+        "name":"Juggernaut",
+        "wikiLink":"https://dota2.fandom.com/wiki/Juggernaut",
+        "attribute":"AGILITY",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/0/03/Juggernaut_icon.png/revision/latest?cb=20160411212710",
+        "lore":"Yurnero",
+        "attackType": "Melee"
+    },
+    {
+        "id":44,
+        "name":"Keeper of the Light",
+        "wikiLink":"https://dota2.fandom.com/wiki/Keeper_of_the_Light",
+        "attribute":"INTELLIGENCE",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/b/b9/Keeper_of_the_Light_icon.png/revision/latest?cb=20160411215721",
+        "lore":"Ezalor",
+        "attackType": "Ranged"
+    },
+    {
+        "id":45,
+        "name":"Kunkka",
+        "wikiLink":"https://dota2.fandom.com/wiki/Kunkka",
+        "attribute":"STRENGTH",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/c/c0/Kunkka_icon.png/revision/latest?cb=20160411205729",
+        "lore":"Admiral",
+        "attackType": "Melee"
+    },
+    {
+        "id":46,
+        "name":"Legion Commander",
+        "wikiLink":"https://dota2.fandom.com/wiki/Legion_Commander",
+        "attribute":"STRENGTH",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/a/a2/Legion_Commander_icon.png/revision/latest?cb=20190401095109",
+        "lore":"Tresdin",
+        "attackType": "Melee"
+    },
+    {
+        "id":47,
+        "name":"Leshrac",
+        "wikiLink":"https://dota2.fandom.com/wiki/Leshrac",
+        "attribute":"INTELLIGENCE",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/2/26/Leshrac_icon.png/revision/latest?cb=20160411220559",
+        "lore":"Tormented Soul",
+        "attackType": "Ranged"
+    },
+    {
+        "id":48,
+        "name":"Lich",
+        "wikiLink":"https://dota2.fandom.com/wiki/Lich",
+        "attribute":"INTELLIGENCE",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/b/bb/Lich_icon.png/revision/latest?cb=20160411215954",
+        "lore":"Ethreain",
+        "attackType": "Ranged"
+    },
+    {
+        "id":49,
+        "name":"Lifestealer",
+        "wikiLink":"https://dota2.fandom.com/wiki/Lifestealer",
+        "attribute":"STRENGTH",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/2/2b/Lifestealer_icon.png/revision/latest?cb=20160411211952",
+        "lore":"N'aix",
+        "attackType": "Melee"
+    },
+    {
+        "id":50,
+        "name":"Lina",
+        "wikiLink":"https://dota2.fandom.com/wiki/Lina",
+        "attribute":"INTELLIGENCE",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/3/35/Lina_icon.png/revision/latest?cb=20160411215059",
+        "lore":"Slayer",
+        "attackType": "Ranged"
+    },
+    {
+        "id":51,
+        "name":"Lion",
+        "wikiLink":"https://dota2.fandom.com/wiki/Lion",
+        "attribute":"INTELLIGENCE",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/b/b8/Lion_icon.png/revision/latest?cb=20160411220032",
+        "lore":"Demon Witch",
+        "attackType": "Ranged"
+    },
+    {
+        "id":52,
+        "name":"Lone Druid",
+        "wikiLink":"https://dota2.fandom.com/wiki/Lone_Druid",
+        "attribute":"AGILITY",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/5/5d/Lone_Druid_icon.png/revision/latest?cb=20160411213427",
+        "lore":"Sylla",
+        "attackType": "Ranged"
+    },
+    {
+        "id":53,
+        "name":"Luna",
+        "wikiLink":"https://dota2.fandom.com/wiki/Luna",
+        "attribute":"AGILITY",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/7/7d/Luna_icon.png/revision/latest?cb=20160411213209",
+        "lore":"Moon Rider",
+        "attackType": "Ranged"
+    },
+    {
+        "id":54,
+        "name":"Lycan",
+        "wikiLink":"https://dota2.fandom.com/wiki/Lycan",
+        "attribute":"STRENGTH",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/d/d6/Lycan_icon.png/revision/latest?cb=20160411212224",
+        "lore":"Banehallow",
+        "attackType": "Melee"
+    },
+    {
+        "id":55,
+        "name":"Magnus",
+        "wikiLink":"https://dota2.fandom.com/wiki/Magnus",
+        "attribute":"STRENGTH",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/b/ba/Magnus_icon.png/revision/latest?cb=20160411212403",
+        "lore":"Magnoceros",
+        "attackType": "Melee"
+    },
+    {
+        "id":56,
+        "name":"Mars",
+        "wikiLink":"https://dota2.fandom.com/wiki/Mars",
+        "attribute":"STRENGTH",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/9/9d/Mars_icon.png/revision/latest?cb=20190401094550",
+        "lore":"First Son of Heaven",
+        "attackType": "Melee"
+    },
+    {
+        "id":57,
+        "name":"Medusa",
+        "wikiLink":"https://dota2.fandom.com/wiki/Medusa",
+        "attribute":"AGILITY",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/c/cc/Medusa_icon.png/revision/latest?cb=20160411214604",
+        "lore":"Gorgon",
+        "attackType": "Ranged"
+    },
+    {
+        "id":58,
+        "name":"Meepo",
+        "wikiLink":"https://dota2.fandom.com/wiki/Meepo",
+        "attribute":"AGILITY",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/8/85/Meepo_icon.png/revision/latest?cb=20160411214421",
+        "lore":"Geomancer",
+        "attackType": "Melee"
+    },
+    {
+        "id":59,
+        "name":"Mirana",
+        "wikiLink":"https://dota2.fandom.com/wiki/Mirana",
+        "attribute":"AGILITY",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/1/12/Mirana_icon.png/revision/latest?cb=20160411212744",
+        "lore":"Princess of the Moon",
+        "attackType": "Ranged"
+    },
+    {
+        "id":60,
+        "name":"Monkey King",
+        "wikiLink":"https://dota2.fandom.com/wiki/Monkey_King",
+        "attribute":"AGILITY",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/7/7b/Monkey_King_icon.png/revision/latest?cb=20161222035035",
+        "lore":"Sun Wukong",
+        "attackType": "Melee"
+    },
+    {
+        "id":61,
+        "name":"Morphling",
+        "wikiLink":"https://dota2.fandom.com/wiki/Morphling",
+        "attribute":"AGILITY",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/7/7b/Morphling_icon.png/revision/latest?cb=20160411212816",
+        "lore":"Water Elemental",
+        "attackType": "Ranged"
+    },
+    {
+        "id":62,
+        "name":"Naga Siren",
+        "wikiLink":"https://dota2.fandom.com/wiki/Naga_Siren",
+        "attribute":"AGILITY",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/6/60/Naga_Siren_icon.png/revision/latest?cb=20160411213513",
+        "lore":"Slithice",
+        "attackType": "Melee"
+    },
+    {
+        "id":63,
+        "name":"Nature's Prophet",
+        "wikiLink":"https://dota2.fandom.com/wiki/Nature%27s_Prophet",
+        "attribute":"INTELLIGENCE",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/c/c4/Nature%27s_Prophet_icon.png/revision/latest?cb=20160411215241",
+        "lore":"Profit",
+        "attackType": "Ranged"
+    },
+    {
+        "id":64,
+        "name":"Necrophos",
+        "wikiLink":"https://dota2.fandom.com/wiki/Necrophos",
+        "attribute":"INTELLIGENCE",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/a/a6/Necrophos_icon.png/revision/latest?cb=20160411220233",
+        "lore":"Rotund'jere",
+        "attackType": "Ranged"
+    },
+    {
+        "id":65,
+        "name":"Night Stalker",
+        "wikiLink":"https://dota2.fandom.com/wiki/Night_Stalker",
+        "attribute":"STRENGTH",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/1/15/Night_Stalker_icon.png/revision/latest?cb=20160411212027",
+        "lore":"Balanar",
+        "attackType": "Melee"
+    },
+    {
+        "id":66,
+        "name":"Nyx Assassin",
+        "wikiLink":"https://dota2.fandom.com/wiki/Nyx_Assassin",
+        "attribute":"AGILITY",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/f/fa/Nyx_Assassin_icon.png/revision/latest?cb=20160411214454",
+        "lore":"Bug",
+        "attackType": "Melee"
+    },
+    {
+        "id":67,
+        "name":"Ogre Magi",
+        "wikiLink":"https://dota2.fandom.com/wiki/Ogre_Magi",
+        "attribute":"INTELLIGENCE",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/e/e0/Ogre_Magi_icon.png/revision/latest?cb=20160411215538",
+        "lore":"Aggron Stonebreak",
+        "attackType": "Melee"
+    },
+    {
+        "id":68,
+        "name":"Omniknight",
+        "wikiLink":"https://dota2.fandom.com/wiki/Omniknight",
+        "attribute":"STRENGTH",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/e/e2/Omniknight_icon.png/revision/latest?cb=20160411210119",
+        "lore":"Purist Thunderwrath",
+        "attackType": "Melee"
+    },
+    {
+        "id":69,
+        "name":"Oracle",
+        "wikiLink":"https://dota2.fandom.com/wiki/Oracle",
+        "attribute":"INTELLIGENCE",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/7/72/Oracle_icon.png/revision/latest?cb=20160411215824",
+        "lore":"Nerif",
+        "attackType": "Ranged"
+    },
+    {
+        "id":70,
+        "name":"Outworld Destroyer",
+        "wikiLink":"https://dota2.fandom.com/wiki/Outworld_Destroyer",
+        "attribute":"INTELLIGENCE",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/1/10/Outworld_Destroyer_icon.png/revision/latest?cb=20160411220923",
+        "lore":"Harbinger",
+        "attackType": "Ranged"
+    },
+    {
+        "id":71,
+        "name":"Pangolier",
+        "wikiLink":"https://dota2.fandom.com/wiki/Pangolier",
+        "attribute":"AGILITY",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/4/4e/Pangolier_icon.png/revision/latest?cb=20180831204401",
+        "lore":"Donté Panlin",
+        "attackType": "Melee"
+    },
+    {
+        "id":72,
+        "name":"Phantom Assassin",
+        "wikiLink":"https://dota2.fandom.com/wiki/Phantom_Assassin",
+        "attribute":"AGILITY",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/8/8e/Phantom_Assassin_icon.png/revision/latest?cb=20160411214013",
+        "lore":"Mortred",
+        "attackType": "Melee"
+    },
+    {
+        "id":73,
+        "name":"Phantom Lancer",
+        "wikiLink":"https://dota2.fandom.com/wiki/Phantom_Lancer",
+        "attribute":"AGILITY",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/8/81/Phantom_Lancer_icon.png/revision/latest?cb=20160411212849",
+        "lore":"Azwraith",
+        "attackType": "Melee"
+    },
+    {
+        "id":74,
+        "name":"Phoenix",
+        "wikiLink":"https://dota2.fandom.com/wiki/Phoenix",
+        "attribute":"STRENGTH",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/1/14/Phoenix_icon.png/revision/latest?cb=20160411211344",
+        "lore":"Bird",
+        "attackType": "Ranged"
+    },
+    {
+        "id":75,
+        "name":"Puck",
+        "wikiLink":"https://dota2.fandom.com/wiki/Puck",
+        "attribute":"INTELLIGENCE",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/1/13/Puck_icon.png/revision/latest?cb=20160411214839",
+        "lore":"Faerie Dragon",
+        "attackType": "Ranged"
+    },
+    {
+        "id":76,
+        "name":"Pudge",
+        "wikiLink":"https://dota2.fandom.com/wiki/Pudge",
+        "attribute":"STRENGTH",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/c/c0/Pudge_icon.png/revision/latest?cb=20160411211506",
+        "lore":"Butcher",
+        "attackType": "Melee"
+    },
+    {
+        "id":77,
+        "name":"Pugna",
+        "wikiLink":"https://dota2.fandom.com/wiki/Pugna",
+        "attribute":"INTELLIGENCE",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/c/cd/Pugna_icon.png/revision/latest?cb=20160411220442",
+        "lore":"Green Skeleton",
+        "attackType": "Ranged"
+    },
+    {
+        "id":78,
+        "name":"Queen of Pain",
+        "wikiLink":"https://dota2.fandom.com/wiki/Queen_of_Pain",
+        "attribute":"INTELLIGENCE",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/a/a1/Queen_of_Pain_icon.png/revision/latest?cb=20160411220334",
+        "lore":"Akasha",
+        "attackType": "Ranged"
+    },
+    {
+        "id":79,
+        "name":"Razor",
+        "wikiLink":"https://dota2.fandom.com/wiki/Razor",
+        "attribute":"AGILITY",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/6/66/Razor_icon.png/revision/latest?cb=20160411213830",
+        "lore":"Lightning Revenant",
+        "attackType": "Ranged"
+    },
+    {
+        "id":80,
+        "name":"Riki",
+        "wikiLink":"https://dota2.fandom.com/wiki/Riki",
+        "attribute":"AGILITY",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/7/7d/Riki_icon.png/revision/latest?cb=20160411212958",
+        "lore":"Stealth Assassin",
+        "attackType": "Melee"
+    },
+    {
+        "id":81,
+        "name":"Rubick",
+        "wikiLink":"https://dota2.fandom.com/wiki/Rubick",
+        "attribute":"INTELLIGENCE",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/8/8a/Rubick_icon.png/revision/latest?cb=20160411215614",
+        "lore":"Grand Magus",
+        "attackType": "Ranged"
+    },
+    {
+        "id":82,
+        "name":"Sand King",
+        "wikiLink":"https://dota2.fandom.com/wiki/Sand_King",
+        "attribute":"STRENGTH",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/7/79/Sand_King_icon.png/revision/latest?cb=20160411211544",
+        "lore":"Crixalis",
+        "attackType": "Melee"
+    },
+    {
+        "id":83,
+        "name":"Shadow Demon",
+        "wikiLink":"https://dota2.fandom.com/wiki/Shadow_Demon",
+        "attribute":"INTELLIGENCE",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/f/f3/Shadow_Demon_icon.png/revision/latest?cb=20160411220956",
+        "lore":"Soulcatcher",
+        "attackType": "Ranged"
+    },
+    {
+        "id":84,
+        "name":"Shadow Fiend",
+        "wikiLink":"https://dota2.fandom.com/wiki/Shadow_Fiend",
+        "attribute":"AGILITY",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/3/36/Shadow_Fiend_icon.png/revision/latest?cb=20160411213752",
+        "lore":"Nevermore",
+        "attackType": "Ranged"
+    },
+    {
+        "id":85,
+        "name":"Shadow Shaman",
+        "wikiLink":"https://dota2.fandom.com/wiki/Shadow_Shaman",
+        "attribute":"INTELLIGENCE",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/9/96/Shadow_Shaman_icon.png/revision/latest?cb=20160411215130",
+        "lore":"Rhasta",
+        "attackType": "Ranged"
+    },
+    {
+        "id":86,
+        "name":"Silencer",
+        "wikiLink":"https://dota2.fandom.com/wiki/Silencer",
+        "attribute":"INTELLIGENCE",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/9/9f/Silencer_icon.png/revision/latest?cb=20160411215503",
+        "lore":"Nortrom",
+        "attackType": "Ranged"
+    },
+    {
+        "id":87,
+        "name":"Skywrath Mage",
+        "wikiLink":"https://dota2.fandom.com/wiki/Skywrath_Mage",
+        "attribute":"INTELLIGENCE",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/b/bf/Skywrath_Mage_icon.png/revision/latest?cb=20160411215753",
+        "lore":"Dragonus",
+        "attackType": "Ranged"
+    },
+    {
+        "id":88,
+        "name":"Slardar",
+        "wikiLink":"https://dota2.fandom.com/wiki/Slardar",
+        "attribute":"STRENGTH",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/7/7e/Slardar_icon.png/revision/latest?cb=20161213040814",
+        "lore":"Slithereen Guard",
+        "attackType": "Melee"
+    },
+    {
+        "id":89,
+        "name":"Slark",
+        "wikiLink":"https://dota2.fandom.com/wiki/Slark",
+        "attribute":"AGILITY",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/a/aa/Slark_icon.png/revision/latest?cb=20160411214526",
+        "lore":"Nightcrawler",
+        "attackType": "Melee"
+    },
+    {
+        "id":90,
+        "name":"Snapfire",
+        "wikiLink":"https://dota2.fandom.com/wiki/Snapfire",
+        "attribute":"STRENGTH",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/7/7a/Snapfire_icon.png/revision/latest?cb=20191127043227",
+        "lore":"Beatrix Snapfire",
+        "attackType": "Ranged"
+    },
+    {
+        "id":91,
+        "name":"Sniper",
+        "wikiLink":"https://dota2.fandom.com/wiki/Sniper",
+        "attribute":"AGILITY",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/5/51/Sniper_icon.png/revision/latest?cb=20160411213053",
+        "lore":"Kardel Sharpeye",
+        "attackType": "Ranged"
+    },
+    {
+        "id":92,
+        "name":"Spectre",
+        "wikiLink":"https://dota2.fandom.com/wiki/Spectre",
+        "attribute":"AGILITY",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/f/ff/Spectre_icon.png/revision/latest?cb=20160411214336",
+        "lore":"Mercurial",
+        "attackType": "Melee"
+    },
+    {
+        "id":93,
+        "name":"Spirit Breaker",
+        "wikiLink":"https://dota2.fandom.com/wiki/Spirit_Breaker",
+        "attribute":"STRENGTH",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/d/df/Spirit_Breaker_icon.png/revision/latest?cb=20160411212138",
+        "lore":"Barathrum",
+        "attackType": "Melee"
+    },
+    {
+        "id":94,
+        "name":"Storm Spirit",
+        "wikiLink":"https://dota2.fandom.com/wiki/Storm_Spirit",
+        "attribute":"INTELLIGENCE",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/1/13/Storm_Spirit_icon.png/revision/latest?cb=20160411214914",
+        "lore":"Raijin Thunderkeg",
+        "attackType": "Ranged"
+    },
+    {
+        "id":95,
+        "name":"Sven",
+        "wikiLink":"https://dota2.fandom.com/wiki/Sven",
+        "attribute":"STRENGTH",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/1/1b/Sven_icon.png/revision/latest?cb=20160411205500",
+        "lore":"Rogue Knight",
+        "attackType": "Melee"
+    },
+    {
+        "id":96,
+        "name":"Techies",
+        "wikiLink":"https://dota2.fandom.com/wiki/Techies",
+        "attribute":"INTELLIGENCE",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/f/fa/Techies_icon.png/revision/latest?cb=20160411215855",
+        "lore":"Squee, Spleen, and Spoon",
+        "attackType": "Ranged"
+    },
+    {
+        "id":97,
+        "name":"Templar Assassin",
+        "wikiLink":"https://dota2.fandom.com/wiki/Templar_Assassin",
+        "attribute":"AGILITY",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/9/9c/Templar_Assassin_icon.png/revision/latest?cb=20160411213131",
+        "lore":"Lanaya",
+        "attackType": "Ranged"
+    },
+    {
+        "id":98,
+        "name":"Terrorblade",
+        "wikiLink":"https://dota2.fandom.com/wiki/Terrorblade",
+        "attribute":"AGILITY",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/5/52/Terrorblade_icon.png/revision/latest?cb=20160411214652",
+        "lore":"Demon Marauder",
+        "attackType": "Melee"
+    },
+    {
+        "id":99,
+        "name":"Tidehunter",
+        "wikiLink":"https://dota2.fandom.com/wiki/Tidehunter",
+        "attribute":"STRENGTH",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/d/d5/Tidehunter_icon.png/revision/latest?cb=20160411211651",
+        "lore":"Leviathan",
+        "attackType": "Melee"
+    },
+    {
+        "id":100,
+        "name":"Timbersaw",
+        "wikiLink":"https://dota2.fandom.com/wiki/Timbersaw",
+        "attribute":"STRENGTH",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/9/9a/Timbersaw_icon.png/revision/latest?cb=20160411210643",
+        "lore":"Rizzrack",
+        "attackType": "Melee"
+    },
+    {
+        "id":101,
+        "name":"Tinker",
+        "wikiLink":"https://dota2.fandom.com/wiki/Tinker",
+        "attribute":"INTELLIGENCE",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/d/d1/Tinker_icon.png/revision/latest?cb=20160411215201",
+        "lore":"Boush",
+        "attackType": "Ranged"
+    },
+    {
+        "id":102,
+        "name":"Tiny",
+        "wikiLink":"https://dota2.fandom.com/wiki/Tiny",
+        "attribute":"STRENGTH",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/5/55/Tiny_icon.png/revision/latest?cb=20160411205608",
+        "lore":"Stone Giant",
+        "attackType": "Melee"
+    },
+    {
+        "id":103,
+        "name":"Treant Protector",
+        "wikiLink":"https://dota2.fandom.com/wiki/Treant_Protector",
+        "attribute":"STRENGTH",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/3/3f/Treant_Protector_icon.png/revision/latest?cb=20160411210417",
+        "lore":"Rooftrellen",
+        "attackType": "Melee"
+    },
+    {
+        "id":104,
+        "name":"Troll Warlord",
+        "wikiLink":"https://dota2.fandom.com/wiki/Troll_Warlord",
+        "attribute":"AGILITY",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/f/f0/Troll_Warlord_icon.png/revision/latest?cb=20160411213539",
+        "lore":"Jah'rakal",
+        "attackType": "Melee"
+    },
+    {
+        "id":105,
+        "name":"Tusk",
+        "wikiLink":"https://dota2.fandom.com/wiki/Tusk",
+        "attribute":"STRENGTH",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/c/ce/Tusk_icon.png/revision/latest?cb=20160411210826",
+        "lore":"Ymir",
+        "attackType": "Melee"
+    },
+    {
+        "id":106,
+        "name":"Underlord",
+        "wikiLink":"https://dota2.fandom.com/wiki/Underlord",
+        "attribute":"STRENGTH",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/1/18/Underlord_icon.png/revision/latest?cb=20160828140759",
+        "lore":"Vrogros",
+        "attackType": "Melee"
+    },
+    {
+        "id":107,
+        "name":"Undying",
+        "wikiLink":"https://dota2.fandom.com/wiki/Undying",
+        "attribute":"STRENGTH",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/6/61/Undying_icon.png/revision/latest?cb=20160411212333",
+        "lore":"Almighty Dirge",
+        "attackType": "Melee"
+    },
+    {
+        "id":108,
+        "name":"Ursa",
+        "wikiLink":"https://dota2.fandom.com/wiki/Ursa",
+        "attribute":"AGILITY",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/4/40/Ursa_icon.png/revision/latest?cb=20160411213321",
+        "lore":"Ulfsaar",
+        "attackType": "Melee"
+    },
+    {
+        "id":109,
+        "name":"Vengeful Spirit",
+        "wikiLink":"https://dota2.fandom.com/wiki/Vengeful_Spirit",
+        "attribute":"AGILITY",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/2/20/Vengeful_Spirit_icon.png/revision/latest?cb=20160411212927",
+        "lore":"Shendelzare",
+        "attackType": "Ranged"
+    },
+    {
+        "id":110,
+        "name":"Venomancer",
+        "wikiLink":"https://dota2.fandom.com/wiki/Venomancer",
+        "attribute":"AGILITY",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/2/25/Venomancer_icon.png/revision/latest?cb=20160411213902",
+        "lore":"Lesale Deathbringer",
+        "attackType": "Ranged"
+    },
+    {
+        "id":111,
+        "name":"Viper",
+        "wikiLink":"https://dota2.fandom.com/wiki/Viper",
+        "attribute":"AGILITY",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/5/5f/Viper_icon.png/revision/latest?cb=20161213040756",
+        "lore":"Netherdrake",
+        "attackType": "Ranged"
+    },
+    {
+        "id":112,
+        "name":"Visage",
+        "wikiLink":"https://dota2.fandom.com/wiki/Visage",
+        "attribute":"INTELLIGENCE",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/9/9e/Visage_icon.png/revision/latest?cb=20160411221032",
+        "lore":"Necro'lic",
+        "attackType": "Ranged"
+    },
+    {
+        "id":113,
+        "name":"Void Spirit",
+        "wikiLink":"https://dota2.fandom.com/wiki/Void_Spirit",
+        "attribute":"INTELLIGENCE",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/9/99/Void_Spirit_icon.png/revision/latest?cb=20210413204208",
+        "lore":"Inai",
+        "attackType": "Melee"
+    },
+    {
+        "id":114,
+        "name":"Warlock",
+        "wikiLink":"https://dota2.fandom.com/wiki/Warlock",
+        "attribute":"INTELLIGENCE",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/3/3f/Warlock_icon.png/revision/latest?cb=20160411220306",
+        "lore":"Demnok Lannik",
+        "attackType": "Ranged"
+    },
+    {
+        "id":115,
+        "name":"Weaver",
+        "wikiLink":"https://dota2.fandom.com/wiki/Weaver",
+        "attribute":"AGILITY",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/0/09/Weaver_icon.png/revision/latest?cb=20160411214233",
+        "lore":"Skitskurr",
+        "attackType": "Ranged"
+    },
+    {
+        "id":116,
+        "name":"Windranger",
+        "wikiLink":"https://dota2.fandom.com/wiki/Windranger",
+        "attribute":"INTELLIGENCE",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/6/60/Windranger_icon.png/revision/latest?cb=20160411214951",
+        "lore":"Lyralei",
+        "attackType": "Ranged"
+    },
+    {
+        "id":117,
+        "name":"Winter Wyvern",
+        "wikiLink":"https://dota2.fandom.com/wiki/Winter_Wyvern",
+        "attribute":"INTELLIGENCE",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/4/4a/Winter_Wyvern_icon.png/revision/latest?cb=20160411221057",
+        "lore":"Auroth",
+        "attackType": "Ranged"
+    },
+    {
+        "id":118,
+        "name":"Witch Doctor",
+        "wikiLink":"https://dota2.fandom.com/wiki/Witch_Doctor",
+        "attribute":"INTELLIGENCE",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/3/33/Witch_Doctor_icon.png/revision/latest?cb=20160411220105",
+        "lore":"Zharvakko",
+        "attackType": "Ranged"
+    },
+    {
+        "id":119,
+        "name":"Wraith King",
+        "wikiLink":"https://dota2.fandom.com/wiki/Wraith_King",
+        "attribute":"STRENGTH",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/1/1e/Wraith_King_icon.png/revision/latest?cb=20160411211746",
+        "lore":"Ostarion",
+        "attackType": "Melee"
+    },
+    {
+        "id":120,
+        "name":"Zeus",
+        "wikiLink":"https://dota2.fandom.com/wiki/Zeus",
+        "attribute":"INTELLIGENCE",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/3/3f/Zeus_icon.png/revision/latest?cb=20160411215025",
+        "lore":"Lord of Heaven",
+        "attackType": "Ranged"
+    },
+    {
+        "id":121,
+        "name":"Brewmaster",
+        "wikiLink":"https://dota2.fandom.com/wiki/Brewmaster",
+        "attribute":"STRENGTH",
+        "thumbnail":"https://static.wikia.nocookie.net/dota2_gamepedia/images/1/1e/Brewmaster_icon.png/revision/latest?cb=20160411210333",
+        "lore":"Mangix",
+        "attackType": "Melee"
+     }
+]
