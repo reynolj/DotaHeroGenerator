@@ -2,6 +2,30 @@ const { SSL_OP_DONT_INSERT_EMPTY_FRAGMENTS } = require('constants')
 const Discord = require('discord.js')
 const client = new Discord.Client()
 const credentials = require('./credentials')
+const constants = require('./constants')
+const { getActualAttribute } = require('./constants')
+const attributeColor = new Map([
+    [constants.STR, "#ce4419"],
+    [constants.AGI, "#3acd43"],
+    [constants.INT, "#2bc1d2"]
+])
+cosnt = attributeImage = new Map([
+    [constants.STR, `./assets/attributes/strength.png`],
+    [constants.AGI, `./assets/attributes/agility.png`],
+    [constants.INT, `./assets/attributes/intelligence.png`]
+])
+
+class Hero{
+    constructor(id, heroName, lore, attribute, attackType, wikiLink, thumbnail){
+        this.id = id;
+        this.heroName = heroName;
+        this.lore = lore;
+        this.attribute = attribute;
+        this.attackType = attackType;
+        this.wikiLink = wikiLink;
+        this.thumbnail = thumbnail;
+    }
+}
 
 // You'll need a credentials file
 client.login(credentials.login_hash)
@@ -29,43 +53,14 @@ client.on('message', (receivedMessage) => {
     }
 })
 
-const STR = "STRENGTH";
-const AGI = "AGILITY";
-const INT = "INTELLIGENCE";
-
 var STR_Array = new Array();
 var AGI_Array = new Array();
 var INT_Array = new Array();
-
-const attributeColor = new Map([
-    [STR, "#ce4419"],
-    [AGI, "#3acd43"],
-    [INT, "#2bc1d2"]
-]);
-
-const attributeImage = new Map([
-    [STR, `./assets/attributes/strength.png`],
-    [AGI, `./assets/attributes/agility.png`],
-    [INT, `./assets/attributes/intelligence.png`]
-]);
-
-class Hero{
-    constructor(id, heroName, lore, attribute, attackType, wikiLink, thumbnail){
-        this.id = id;
-        this.heroName = heroName;
-        this.lore = lore;
-        this.attribute = attribute;
-        this.attackType = attackType;
-        this.wikiLink = wikiLink;
-        this.thumbnail = thumbnail;
-    }
-}
 
 onLoad()
 
 function onLoad(){
     const fs = require('fs')
-    
     const rawdata = fs.readFileSync('heroes.json')
     var heroList = JSON.parse(rawdata)
 
@@ -80,9 +75,9 @@ function onLoad(){
             heroList[i].wikiLink,
             heroList[i].thumbnail
         )
-        if (heroList[i].attribute == STR)
+        if (heroList[i].attribute == constants.STR)
             STR_Array.push(hero)
-        else if (heroList[i].attribute == AGI)
+        else if (heroList[i].attribute == constants.AGI)
             AGI_Array.push(hero)
         else
             INT_Array.push(hero)
@@ -90,7 +85,6 @@ function onLoad(){
         i++
         // console.log(hero)
     }
-
     // console.log(`Strength array length: ${STR_Array.length}`)
     // console.log(`Agility array length: ${AGI_Array.length}`)
     // console.log(`Intelligence array length: ${INT_Array.length}`)
@@ -126,15 +120,15 @@ function helpCommand(arguments, receivedMessage) {
 
 function randomHero(attribute){
     var hero;
-    if (attribute == STR){
+    if (attribute == constants.STR){
         var index = Math.floor(Math.random()*STR_Array.length);
         hero = STR_Array[index];
     }
-    else if(attribute == AGI){
+    else if(attribute == constants.AGI){
         var index = Math.floor(Math.random()*AGI_Array.length);
         hero = AGI_Array[index];
     }
-    else if (attribute == INT){
+    else if (attribute == constants.INT){
         var index = Math.floor(Math.random()*INT_Array.length);
         hero = INT_Array[index];
     }
@@ -144,9 +138,9 @@ function randomHero(attribute){
 function randomCommand(arguments, receivedMessage) {
     if(arguments.length == 0) {
         let heroList = [
-            randomHero(STR),
-            randomHero(AGI),
-            randomHero(INT)
+            randomHero(constants.STR),
+            randomHero(constants.AGI),
+            randomHero(constants.INT)
         ];
  
         heroList.forEach(hero => {
@@ -171,7 +165,8 @@ function randomCommand(arguments, receivedMessage) {
     else if (arguments.length == 1){
         attribute = arguments[0].toUpperCase()
 
-        if ([STR, AGI, INT].includes(attribute)){
+        if (constants.attributeAliases.includes(attribute)){
+            attribute = constants.getActualAttribute(attribute)
             var hero = randomHero(attribute)
 
             // console.log(`${JSON.stringify(hero.heroName)}`)
@@ -189,13 +184,15 @@ function randomCommand(arguments, receivedMessage) {
             receivedMessage.channel.send(embedMsg)
         }
         else{
-            receivedMessage.channel.send(`${arguments[0]} is not a valid attribute. Valid attributes are ${[STR, AGI, INT]}`)
+            receivedMessage.channel.send(`${arguments[0]} is not a valid attribute. Valid attributes are ${constants.attributeAliases}`)
         }
     } 
     else if (arguments.length == 2){
         attribute1 = arguments[0].toUpperCase()
         attribute2 = arguments[1].toUpperCase()
-        if ([STR, AGI, INT].includes(attribute1) && [STR, AGI, INT].includes(attribute2)){
+        if (constants.attributeAliases.includes(attribute1) && constants.attributeAliases.includes(attribute2)){
+            attribute1 = getActualAttribute(attribute1)
+            attribute2 = getActualAttribute(attribute2)
             var hero1 = randomHero(attribute1)
             var hero2 = randomHero(attribute2)
 
@@ -230,13 +227,13 @@ function randomCommand(arguments, receivedMessage) {
         }
         else{
             var badAttribute;
-            if (![STR, AGI, INT].includes(attribute1)){
+            if (![constants.STR, constants.AGI, constants.INT].includes(attribute1)){
                 badAttribute = arguments[0]
             }
             else{
                 badAttribute = arguments[1]
             }
-            receivedMessage.channel.send(`${badAttribute} is not a valid attribute. Valid attributes are ${[STR, AGI, INT]}`)
+            receivedMessage.channel.send(`${badAttribute} is not a valid attribute. Valid attributes are ${constants.attributeAliases}`)
         }
     } 
     else {
