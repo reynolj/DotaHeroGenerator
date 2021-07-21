@@ -1,7 +1,7 @@
 const { SSL_OP_DONT_INSERT_EMPTY_FRAGMENTS } = require('constants')
 const Discord = require('discord.js')
 const client = new Discord.Client()
-var credentials = require('./credentials')
+const credentials = require('./credentials')
 
 // You'll need a credentials file
 client.login(credentials.login_hash)
@@ -50,13 +50,14 @@ const attributeImage = new Map([
 ]);
 
 class Hero{
-    constructor(id, heroName, wikiLink, attribute, lore, attackType){
+    constructor(id, heroName, lore, attribute, attackType, wikiLink, thumbnail){
         this.id = id;
         this.heroName = heroName;
-        this.wikiLink = wikiLink;
-        this.attribute = attribute;
         this.lore = lore;
+        this.attribute = attribute;
         this.attackType = attackType;
+        this.wikiLink = wikiLink;
+        this.thumbnail = thumbnail;
     }
 }
 
@@ -73,10 +74,11 @@ function onLoad(){
         var hero = new Hero(
             heroList[i].id,
             heroList[i].name,
-            heroList[i].wikiLink,
-            heroList[i].attribute,
             heroList[i].lore,
-            heroList[i].attackType
+            heroList[i].attribute,
+            heroList[i].attackType,
+            heroList[i].wikiLink,
+            heroList[i].thumbnail
         )
         if (heroList[i].attribute == STR)
             STR_Array.push(hero)
@@ -86,6 +88,7 @@ function onLoad(){
             INT_Array.push(hero)
 
         i++
+        // console.log(hero)
     }
 
     // console.log(`Strength array length: ${STR_Array.length}`)
@@ -152,15 +155,15 @@ function randomCommand(arguments, receivedMessage) {
 
         heroList.forEach(hero => {
             const footerImg = new Discord.MessageAttachment(attributeImage.get(hero.attribute), "attribute.png")
-            const heroImg = new Discord.MessageAttachment(`./assets/thumbnails/${hero.id}.png`, "hero.png")
+            const heroImg = new Discord.MessageAttachment(`${hero.thumbnail}`, "hero.png")
             let embedMsg = new Discord.MessageEmbed()
                 .setColor(attributeColor.get(hero.attribute))
                 .setTitle(hero.heroName)
                 .setDescription(hero.lore)
                 .setURL(hero.wikiLink)
-                .setThumbnail('attachment://hero.png')
                 .attachFiles(footerImg)
                 .attachFiles(heroImg)
+                .setThumbnail('attachment://hero.png')
                 .setFooter(hero.attackType, 'attachment://attribute.png')
             receivedMessage.channel.send(embedMsg)
         })
@@ -173,7 +176,7 @@ function randomCommand(arguments, receivedMessage) {
 
             // console.log(`${JSON.stringify(hero.heroName)}`)
             const footerImg = new Discord.MessageAttachment(attributeImage.get(hero.attribute), "attribute.png")
-            const heroImg = new Discord.MessageAttachment(`./assets/thumbnails/${hero.id}.png`, "hero.png")
+            const heroImg = new Discord.MessageAttachment(hero.thumbnail, "hero.png")
             let embedMsg = new Discord.MessageEmbed()
                 .setColor(attributeColor.get(hero.attribute))
                 .setTitle(hero.heroName)
@@ -200,7 +203,7 @@ function randomCommand(arguments, receivedMessage) {
             // console.log(`${JSON.stringify(hero2.heroName)}`)
 
             let footerImg = new Discord.MessageAttachment(attributeImage.get(hero1.attribute), "attribute.png")
-            let heroImg = new Discord.MessageAttachment(`./assets/thumbnails/${hero1.id}.png`, "hero.png")
+            let heroImg = new Discord.MessageAttachment(hero1.thumbnail, "hero.png")
             let embedMsg = new Discord.MessageEmbed()
                 .setColor(attributeColor.get(hero1.attribute))
                 .setTitle(hero1.heroName)
@@ -213,7 +216,7 @@ function randomCommand(arguments, receivedMessage) {
             receivedMessage.channel.send(embedMsg)
 
             footerImg = new Discord.MessageAttachment(attributeImage.get(hero2.attribute), "attribute.png")
-            heroImg = new Discord.MessageAttachment(`./assets/thumbnails/${hero2.id}.png`, "hero.png")
+            heroImg = new Discord.MessageAttachment(hero2.thumbnail, "hero.png")
             embedMsg = new Discord.MessageEmbed()
                 .setColor(attributeColor.get(hero2.attribute))
                 .setTitle(hero2.heroName)
