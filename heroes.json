@@ -1087,5 +1087,23 @@
         "attackType": "Melee",
         "wikiLink": "https://dota2.fandom.com/wiki/Brewmaster",
         "thumbnail": "./assets/thumbnails/121.png"
+    },
+    {
+        "id": 122,
+        "name": "Marci",
+        "lore": "Whistler",
+        "attribute": "STRENGTH",
+        "attackType": "Melee",
+        "wikiLink": "https://dota2.fandom.com/wiki/Marci",
+        "thumbnail": "./assets/thumbnails/122.png"
+    },
+    {
+        "id": 123,
+        "name": "Primal Beast",
+        "lore": "RAAWR",
+        "attribute": "STRENGTH",
+        "attackType": "Melee",
+        "wikiLink": "https://dota2.fandom.com/wiki/Primal_Beast",
+        "thumbnail": "./assets/thumbnails/123.png"
     }
 ]
