@@ -9,7 +9,7 @@ const attributeColor = new Map([
     [constants.AGI, "#3acd43"],
     [constants.INT, "#2bc1d2"]
 ])
-cosnt = attributeImage = new Map([
+const attributeImage = new Map([
     [constants.STR, `./assets/attributes/strength.png`],
     [constants.AGI, `./assets/attributes/agility.png`],
     [constants.INT, `./assets/attributes/intelligence.png`]
@@ -101,21 +101,41 @@ function processCommand(receivedMessage) {
     } 
     else if (primaryCommand == "random") {
         randomCommand(arguments, receivedMessage)
-    // } else if (primaryCommand == "download") {
-    //     downloadCommand(arguments, receivedMessage)
+    } 
+    else if (primaryCommand == "hero") {
+		toFind = arguments[0];
+		result = findHero(toFind);
+		if (result){
+			sendHeroMessage(result, receivedMessage)
+		}
+		else{
+			receivedMessage.channel.send("Could not find hero: " + toFind)
+		}
     } 
     else {
-        receivedMessage.channel.send("Unknown command. Try `!help`")
+        receivedMessage.channel.send("Unknown command. Try !help`")
     }
 }
 
 function helpCommand(arguments, receivedMessage) {
-    if (arguments.length == 0) {
-        receivedMessage.channel.send("I'm not sure what you need help with. Try `!help [topic]`")
-    } 
-    else {
-        receivedMessage.channel.send("It looks like you need help with " + arguments)
-    }
+    //if (arguments.length == 0){}
+        receivedMessage.channel.send("Try !random or !random [Strength, Agility, Intelligence]")
+    //} 
+    //else {
+    //    receivedMessage.channel.send("It looks like you need help with " + arguments)
+    //}
+}
+
+function comparableName(name){
+    return name.replace(" ", "").toLowerCase();
+}
+
+function findHero(toFind){
+    arr = [].concat(STR_Array, AGI_Array, INT_Array)
+    
+    result = arr.find(x => comparableName(x.heroName) == comparableName(toFind))
+    
+    return result;
 }
 
 function randomHero(attribute){
@@ -140,7 +160,7 @@ function printHero(object){
      console.log(object.heroName)
 }
 
-function sendHeroMessage(hero){
+function sendHeroMessage(hero, receivedMessage){
     const footerImg = new Discord.MessageAttachment(attributeImage.get(hero.attribute), "attribute.png")
     const heroImg = new Discord.MessageAttachment(`${hero.thumbnail}`, "hero.png")
     let embedMsg = new Discord.MessageEmbed()
@@ -165,7 +185,7 @@ function randomCommand(arguments, receivedMessage) {
 
         heroList.forEach(hero => {
             printHero(hero)
-            sendHeroMessage(hero)
+            sendHeroMessage(hero, receivedMessage)
         })
     }
     else if (arguments.length == 1){
@@ -174,7 +194,7 @@ function randomCommand(arguments, receivedMessage) {
         if (constants.attributeAliases.includes(attribute)){
             attribute = constants.getActualAttribute(attribute)
             var hero = randomHero(attribute)
-            sendHeroMessage(hero)
+            sendHeroMessage(hero, receivedMessage)
         }
         else{
             receivedMessage.channel.send(`${arguments[0]} is not a valid attribute. Valid attributes are ${constants.attributeAliases}`)
@@ -188,8 +208,8 @@ function randomCommand(arguments, receivedMessage) {
             attribute2 = getActualAttribute(attribute2)
             var hero1 = randomHero(attribute1)
             var hero2 = randomHero(attribute2)
-            sendHeroMessage(hero1)
-            sendHeroMessage(hero2)
+            sendHeroMessage(hero1, receivedMessage)
+            sendHeroMessage(hero2, receivedMessage)
         }
         else{
             var badAttribute;
