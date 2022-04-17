@@ -1,6 +1,6 @@
 const STR = "STRENGTH"
 const AGI = "AGILITY"
-const INT ="INTELLIGENCE"
+const INT = "INTELLIGENCE"
 const strAliases = new Array(STR, "STR", "S")
 const agiAliases = new Array(AGI, "AGI", "A")
 const intAliases = new Array(INT, "INT", "I")
