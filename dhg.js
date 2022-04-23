@@ -3,29 +3,7 @@ const Discord = require('discord.js')
 const client = new Discord.Client()
 const credentials = require('./credentials')
 const constants = require('./constants')
-const { getActualAttribute } = require('./constants')
-const attributeColor = new Map([
-    [constants.STR, "#ce4419"],
-    [constants.AGI, "#3acd43"],
-    [constants.INT, "#2bc1d2"]
-])
-cosnt = attributeImage = new Map([
-    [constants.STR, `./assets/attributes/strength.png`],
-    [constants.AGI, `./assets/attributes/agility.png`],
-    [constants.INT, `./assets/attributes/intelligence.png`]
-])
-
-class Hero{
-    constructor(id, heroName, lore, attribute, attackType, wikiLink, thumbnail){
-        this.id = id;
-        this.heroName = heroName;
-        this.lore = lore;
-        this.attribute = attribute;
-        this.attackType = attackType;
-        this.wikiLink = wikiLink;
-        this.thumbnail = thumbnail;
-    }
-}
+const { getActualAttribute, STR, AGI, INT } = require('./constants')
 
 // You'll need a credentials file
 client.login(credentials.login_hash)
@@ -33,7 +11,7 @@ client.login(credentials.login_hash)
 client.on('ready', () => {
     console.log("Connected as " + client.user.tag)
 
-    client.user.setActivity("on javascript", {type: "PLAYING"})
+    client.user.setActivity("on Node.js", {type: "PLAYING"})
 
     client.guilds.cache.forEach((guild) => {
         console.log(guild.name)
@@ -49,207 +27,288 @@ client.on('message', (receivedMessage) => {
     }
     //receivedMessage.channel.send("Message received, " + receivedMessage.author.toString() + ": " + receivedMessage.content)
     if (receivedMessage.content.startsWith("!")) {
+        //doCommand(receivedMessage)
         processCommand(receivedMessage)
     }
 })
 
+class Hero{
+    constructor(id, heroName, lore, attribute, attackType, wikiLink, thumbnail, icon, str, agi, int, total, range, ms, bat){
+        this.id = id;
+        this.heroName = heroName;
+        this.lore = lore;
+        this.attribute = attribute;
+        this.attackType = attackType;
+        this.wikiLink = wikiLink;
+        this.thumbnail = thumbnail;
+        this.icon = icon;
+        this.str = str;
+        this.agi = agi;
+        this.int = int;
+        this.total = total;
+        this.range = range;
+        this.ms = ms;
+        this.bat = bat;
+    }
+}
+
+const attributeColor = new Map([
+    [constants.STR, "#ce4419"],
+    [constants.AGI, "#3acd43"],
+    [constants.INT, "#2bc1d2"]
+])
+
+const attributeToImage = new Map([
+    [constants.STR, `./assets/attributes/strength.png`],
+    [constants.AGI, `./assets/attributes/agility.png`],
+    [constants.INT, `./assets/attributes/intelligence.png`]
+])
+
 var STR_Array = new Array();
 var AGI_Array = new Array();
 var INT_Array = new Array();
+var All_Heroes = new Array();
 
-onLoad()
+const attributeToArray = new Map([
+    [constants.STR, STR_Array],
+    [constants.AGI, AGI_Array],
+    [constants.INT, INT_Array]
+])
 
-function onLoad(){
+//Called once on load
+const onLoad = (function () { 
     const fs = require('fs')
     const rawdata = fs.readFileSync('heroes.json')
-    var heroList = JSON.parse(rawdata)
+    let heroList = JSON.parse(rawdata)
 
     let i = 0
     while(i < heroList.length){
-        var hero = new Hero(
+        let hero = new Hero(
             heroList[i].id,
             heroList[i].name,
             heroList[i].lore,
             heroList[i].attribute,
             heroList[i].attackType,
             heroList[i].wikiLink,
-            heroList[i].thumbnail
+            heroList[i].thumbnail,
+            heroList[i].icon,
+            heroList[i].STR_GAIN,
+            heroList[i].AGI_GAIN,
+            heroList[i].INT_GAIN,
+            heroList[i].TOTAL_GAIN,
+            heroList[i].RANGE,
+            heroList[i].MS,
+            heroList[i].BAT
         )
-        if (heroList[i].attribute == constants.STR)
-            STR_Array.push(hero)
-        else if (heroList[i].attribute == constants.AGI)
-            AGI_Array.push(hero)
-        else
-            INT_Array.push(hero)
-
+        attributeToArray.get(heroList[i].attribute).push(heroList[i])
+        All_Heroes.push(heroList[i])
         i++
-        // console.log(hero)
     }
     // console.log(`Strength array length: ${STR_Array.length}`)
     // console.log(`Agility array length: ${AGI_Array.length}`)
     // console.log(`Intelligence array length: ${INT_Array.length}`)
-}
+})();
 
 function processCommand(receivedMessage) {
     let fullCommand = receivedMessage.content.substr(1)
     let splitCommand = fullCommand.split(" ")
-    let primaryCommand = splitCommand[0]
+    let primaryCommand = splitCommand[0].toLowerCase()
     let arguments = splitCommand.slice(1)
 
-    if (primaryCommand == "help") {
-        helpCommand(arguments, receivedMessage)
-    } 
-    else if (primaryCommand == "random") {
-        randomCommand(arguments, receivedMessage)
-    // } else if (primaryCommand == "download") {
-    //     downloadCommand(arguments, receivedMessage)
-    } 
-    else {
-        receivedMessage.channel.send("Unknown command. Try `!help`")
+    switch (primaryCommand){
+        case "help":
+            helpCommand(arguments, receivedMessage)
+            break;
+        case "random":
+            randomCommand(arguments, receivedMessage)
+            break;
+        case "hero":
+            if (arguments < 1){
+                receivedMessage.channel.send("Error. No HeroName after !hero command.")
+                return
+            }
+            toFind = arguments[0];
+            result = findHero(toFind);
+            if (result){
+                sendHeroMessage(result, receivedMessage)
+                return
+            }
+            receivedMessage.channel.send("Could not find hero: " + toFind)
+            break;
+        default:
+            receivedMessage.channel.send("Unknown command. Try !help`")
     }
 }
 
 function helpCommand(arguments, receivedMessage) {
-    if (arguments.length == 0) {
-        receivedMessage.channel.send("I'm not sure what you need help with. Try `!help [topic]`")
-    } 
-    else {
-        receivedMessage.channel.send("It looks like you need help with " + arguments)
-    }
+    receivedMessage.channel.send("Try !random or !random [Strength, Agility, Intelligence] or !hero HeroName" )
+}
+
+function comparableName(name){
+    return name.replace(" ", "").toLowerCase();
+}
+
+function findHero(toFind){
+    return All_Heroes.find(x => comparableName(x.heroName) == comparableName(toFind))
+}
+
+function printHero(hero){
+    console.log(hero.heroName)
 }
 
 function randomHero(attribute){
-    var hero;
-    if (attribute == constants.STR){
-        var index = Math.floor(Math.random()*STR_Array.length);
-        hero = STR_Array[index];
-    }
-    else if(attribute == constants.AGI){
-        var index = Math.floor(Math.random()*AGI_Array.length);
-        hero = AGI_Array[index];
-    }
-    else if (attribute == constants.INT){
-        var index = Math.floor(Math.random()*INT_Array.length);
-        hero = INT_Array[index];
-    }
-    // heroTest(JSON.stringify(hero))
-    return hero;
+    let array = attributeToArray.get(attribute)
+    let index = Math.floor(Math.random()*array.length);
+    return array[index]
 }
 
-function printHero(object){
-     console.log(object.heroName)
-}
-
-function sendHeroMessage(hero){
-    const footerImg = new Discord.MessageAttachment(attributeImage.get(hero.attribute), "attribute.png")
+function sendHeroMessage(hero, receivedMessage){
+    //const footerImg = new Discord.MessageAttachment(attributeToImage.get(hero.attribute), "attribute.png")
+    const footerImg = new Discord.MessageAttachment(`${hero.icon}`, "icon.png")
     const heroImg = new Discord.MessageAttachment(`${hero.thumbnail}`, "hero.png")
     let embedMsg = new Discord.MessageEmbed()
         .setColor(attributeColor.get(hero.attribute))
-        .setTitle(hero.heroName)
-        .setDescription(hero.lore)
+        .setTitle(`${hero.heroName}`)
+        //.setDescription(hero.lore)
         .setURL(hero.wikiLink)
         .attachFiles(footerImg)
         .attachFiles(heroImg)
         .setThumbnail('attachment://hero.png')
-        .setFooter(hero.attackType, 'attachment://attribute.png')
+        .setFooter(`Total: ${hero.total}\nType: ${hero.attackType}`, "attachment://icon.png")
+        .addFields(
+            { name: 'STR', value: hero.str, inline: true },
+            { name: 'AGI', value: hero.agi, inline: true },
+            { name: 'INT', value: hero.int, inline: true }
+        )
+        .addFields(
+            { name: 'RNG', value: hero.range, inline: true },
+            { name: 'BAT', value: hero.bat, inline: true },
+            { name: 'MS', value: hero.ms, inline: true },
+        )
     receivedMessage.channel.send(embedMsg)
 }
 
 function randomCommand(arguments, receivedMessage) {
-    if(arguments.length == 0) {
-        let heroList = [
-            randomHero(constants.STR),
-            randomHero(constants.AGI),
-            randomHero(constants.INT)
-        ];
+    switch (arguments.length){
+        case 0:
+            let randomHeroList = [
+                randomHero(constants.STR),
+                randomHero(constants.AGI),
+                randomHero(constants.INT)
+            ];
+    
+            randomHeroList.forEach(hero => {
+                printHero(hero)
+                sendHeroMessage(hero, receivedMessage)
+            })
+            break;
+        case 1:
+            attribute = arguments[0].toUpperCase()
 
-        heroList.forEach(hero => {
-            printHero(hero)
-            sendHeroMessage(hero)
-        })
-    }
-    else if (arguments.length == 1){
-        attribute = arguments[0].toUpperCase()
-
-        if (constants.attributeAliases.includes(attribute)){
-            attribute = constants.getActualAttribute(attribute)
-            var hero = randomHero(attribute)
-            sendHeroMessage(hero)
-        }
-        else{
-            receivedMessage.channel.send(`${arguments[0]} is not a valid attribute. Valid attributes are ${constants.attributeAliases}`)
-        }
-    } 
-    else if (arguments.length == 2){
-        attribute1 = arguments[0].toUpperCase()
-        attribute2 = arguments[1].toUpperCase()
-        if (constants.attributeAliases.includes(attribute1) && constants.attributeAliases.includes(attribute2)){
-            attribute1 = getActualAttribute(attribute1)
-            attribute2 = getActualAttribute(attribute2)
-            var hero1 = randomHero(attribute1)
-            var hero2 = randomHero(attribute2)
-            sendHeroMessage(hero1)
-            sendHeroMessage(hero2)
-        }
-        else{
-            var badAttribute;
-            if (![constants.STR, constants.AGI, constants.INT].includes(attribute1)){
-                badAttribute = arguments[0]
+            if (constants.attributeAliases.includes(attribute)){
+                attribute = constants.getActualAttribute(attribute)
+                sendHeroMessage(randomHero(attribute), receivedMessage)
             }
-            else{
-                badAttribute = arguments[1]
+            else {
+                receivedMessage.channel.send(`${arguments[0]} is not a valid attribute. Valid attributes are ${constants.attributeAliases}`)
             }
-            receivedMessage.channel.send(`${badAttribute} is not a valid attribute. Valid attributes are ${constants.attributeAliases}`)
-        }
-    } 
-    else {
-        receivedMessage.channel.send(`Invalid number of arguments. 0, 1, and 2 are the valid number of arguments`)
+            break;
+        case 2:
+            attribute1 = arguments[0].toUpperCase()
+            attribute2 = arguments[1].toUpperCase()
+            if (constants.attributeAliases.includes(attribute1) && constants.attributeAliases.includes(attribute2)){
+                attribute1 = getActualAttribute(attribute1)
+                attribute2 = getActualAttribute(attribute2)
+                sendHeroMessage(randomHero(attribute1), receivedMessage)
+                sendHeroMessage(randomHero(attribute2), receivedMessage)
+            } 
+            else {
+                receivedMessage.channel.send(`You enterd an invalid attribute. Valid attributes are ${constants.attributeAliases}`)
+            }
+            break;
+        default:
+            receivedMessage.channel.send(`Invalid number of arguments. 0, 1, and 2 are the valid number of arguments`)
     }
 }
 
-// function replaceName(name){
-//     name = String(name).replace("%27","\'")
-//     name = name.replaceAll("_", " ")
-//     return name;
+// function doCommand(receivedMessage){
+//     let msg = processCommandOther(receivedMessage)
+
+//     receivedMessage.channel.send(msg)
 // }
 
-// function createJSON(arguments, receivedMessage){
-//     var heroList = new Array(HeroArray.length)
+// function processCommandOther(receivedMessage) {
+//     let fullCommand = receivedMessage.content.substr(1)
+//     let splitCommand = fullCommand.split(" ")
+//     let primaryCommand = splitCommand[0].toLowerCase()
+//     let arguments = splitCommand.slice(1)
 
-//     var index = 1;
-//     HeroArray.forEach(hero => {
-//         heroList[index-1] = {
-//             id: index, 
-//             name: replaceName(hero.heroName),
-//             wikiLink: `https://dota2.fandom.com/wiki/${hero.heroName}`,
-//             attribute: hero.attribute,
-//             thumbnail: hero.thumbnail
-//         }
-//         index = index + 1;
-//     });
-
-//     console.log(heroList[0])
-
-//     const fs = require('fs')
-//     const util = require('util')
-
-
-//     const writeFile = util.promisify(fs.writeFile)
-//     json = JSON.stringify(heroList); 
-//     writeFile('heroes.json', json, 'utf-8')
+//     switch (primaryCommand){
+//         case "help":
+//             return getHelpMsg(arguments, receivedMessage)
+//         case "random":
+//             return getRandomMsg(arguments, receivedMessage)
+//         case "hero":
+//             if (arguments < 1){
+//                 return "Error. No HeroName after !hero command."
+//             }
+//             toFind = arguments[0];
+//             result = findHero(toFind);
+//             if (result){
+//                 return getHeroMsg(result, receivedMessage)
+//             }
+//             return "Could not find hero: " + toFind
+//         default:
+//             return "Unknown command. Try !help`"
+//     }
 // }
 
+// function getHelpMsg(arguments, receivedMessage) {
+//     return "Try !random or !random [Strength, Agility, Intelligence] or !hero HeroName"
+// }
 
+// function getHeroMsg(){
+//     return ""
+// }
 
-// function downloadCommand(){
-//     var fs = require('fs'),
-//     request = require('request');
+// function getRandomMsg(arguments, receivedMessage) {
+//     switch (arguments.length){
+//         case 0:
+//             let randomHeroList = [
+//                 randomHero(constants.STR),
+//                 randomHero(constants.AGI),
+//                 randomHero(constants.INT)
+//             ];
+    
+//             randomHeroList.forEach(hero => {
+//                 printHero(hero)
+//                 sendHeroMessage(hero, receivedMessage)
+//             })
+//             break;
+//         case 1:
+//             attribute = arguments[0].toUpperCase()
 
-//     var download = function(uri, filename, callback){
-//     request.head(uri, function(err, res, body){
-//         console.log('content-type:', res.headers['content-type']);
-//         console.log('content-length:', res.headers['content-length']);
-
-//         request(uri).pipe(fs.createWriteStream(filename)).on('close', callback);
-//     });
-//     };
+//             if (constants.attributeAliases.includes(attribute)){
+//                 attribute = constants.getActualAttribute(attribute)
+//                 sendHeroMessage(randomHero(attribute), receivedMessage)
+//             }
+//             else {
+//                 receivedMessage.channel.send(`${arguments[0]} is not a valid attribute. Valid attributes are ${constants.attributeAliases}`)
+//             }
+//             break;
+//         case 2:
+//             attribute1 = arguments[0].toUpperCase()
+//             attribute2 = arguments[1].toUpperCase()
+//             if (constants.attributeAliases.includes(attribute1) && constants.attributeAliases.includes(attribute2)){
+//                 attribute1 = getActualAttribute(attribute1)
+//                 attribute2 = getActualAttribute(attribute2)
+//                 sendHeroMessage(randomHero(attribute1), receivedMessage)
+//                 sendHeroMessage(randomHero(attribute2), receivedMessage)
+//             } 
+//             else {
+//                 receivedMessage.channel.send(`You enterd an invalid attribute. Valid attributes are ${constants.attributeAliases}`)
+//             }
+//             break;
+//         default:
+//             receivedMessage.channel.send(`Invalid number of arguments. 0, 1, and 2 are the valid number of arguments`)
+//     }
