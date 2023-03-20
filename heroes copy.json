@@ -1,5 +1,6 @@
 [
     {
+        "id": 1,
         "name": "Abaddon",
         "lore": "Lord of Avernus",
         "attribute": "STRENGTH",
@@ -7,10 +8,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Abaddon",
         "thumbnail": "./assets/thumbnails/1.png",
         "icon": "./assets/icons/1.png",
-        "STR_Gain": "2.6",
-        "AGI_Gain": "1.5",
-        "INT_Gain": "2.0",
-        "range": "150"
+        "STR_GAIN": "2.6",
+        "AGI_GAIN": "1.5",
+        "INT_GAIN": "2.0",
+        "TOTAL_GAIN": "6.1",
+        "RANGE": "150",
+        "MS": "325",
+        "BAT": "1.7"
     },
     {
         "id": 2,
@@ -21,10 +25,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Alchemist",
         "thumbnail": "./assets/thumbnails/2.png",
         "icon": "./assets/icons/2.png",
-        "STR_Gain": "2.9",
-        "AGI_Gain": "1.5",
-        "INT_Gain": "1.8",
-        "range": "150"
+        "STR_GAIN": "2.9",
+        "AGI_GAIN": "1.5",
+        "INT_GAIN": "1.8",
+        "TOTAL_GAIN": "6.2",
+        "RANGE": "150",
+        "MS": "305",
+        "BAT": "1.7"
     },
     {
         "id": 3,
@@ -35,10 +42,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Ancient_Apparition",
         "thumbnail": "./assets/thumbnails/3.png",
         "icon": "./assets/icons/3.png",
-        "STR_Gain": "1.9",
-        "AGI_Gain": "2.2",
-        "INT_Gain": "3.4",
-        "range": "675"
+        "STR_GAIN": "1.9",
+        "AGI_GAIN": "2.2",
+        "INT_GAIN": "3.4",
+        "TOTAL_GAIN": "7.5",
+        "RANGE": "675",
+        "MS": "285",
+        "BAT": "1.7"
     },
     {
         "id": 4,
@@ -49,10 +59,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Anti-Mage",
         "thumbnail": "./assets/thumbnails/4.png",
         "icon": "./assets/icons/4.png",
-        "STR_Gain": "1.6",
-        "AGI_Gain": "2.8",
-        "INT_Gain": "1.8",
-        "range": "150"
+        "STR_GAIN": "1.6",
+        "AGI_GAIN": "2.8",
+        "INT_GAIN": "1.8",
+        "TOTAL_GAIN": "6.2",
+        "RANGE": "150",
+        "MS": "310",
+        "BAT": "1.4"
     },
     {
         "id": 5,
@@ -63,10 +76,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Arc_Warden",
         "thumbnail": "./assets/thumbnails/5.png",
         "icon": "./assets/icons/5.png",
-        "STR_Gain": "2.6",
-        "AGI_Gain": "3.0",
-        "INT_Gain": "2.6",
-        "range": "625"
+        "STR_GAIN": "2.6",
+        "AGI_GAIN": "3.0",
+        "INT_GAIN": "2.6",
+        "TOTAL_GAIN": "8.2",
+        "RANGE": "625",
+        "MS": "285",
+        "BAT": "1.7"
     },
     {
         "id": 6,
@@ -77,10 +93,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Axe",
         "thumbnail": "./assets/thumbnails/6.png",
         "icon": "./assets/icons/6.png",
-        "STR_Gain": "3.4",
-        "AGI_Gain": "2.2",
-        "INT_Gain": "1.6",
-        "range": "150"
+        "STR_GAIN": "3.4",
+        "AGI_GAIN": "2.2",
+        "INT_GAIN": "1.6",
+        "TOTAL_GAIN": "7.2",
+        "RANGE": "150",
+        "MS": "310",
+        "BAT": "1.7"
     },
     {
         "id": 7,
@@ -91,10 +110,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Bane",
         "thumbnail": "./assets/thumbnails/7.png",
         "icon": "./assets/icons/7.png",
-        "STR_Gain": "2.5",
-        "AGI_Gain": "2.5",
-        "INT_Gain": "2.5",
-        "range": "400"
+        "STR_GAIN": "2.5",
+        "AGI_GAIN": "2.5",
+        "INT_GAIN": "2.5",
+        "TOTAL_GAIN": "7.5",
+        "RANGE": "400",
+        "MS": "305",
+        "BAT": "1.7"
     },
     {
         "id": 8,
@@ -105,10 +127,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Batrider",
         "thumbnail": "./assets/thumbnails/8.png",
         "icon": "./assets/icons/8.png",
-        "STR_Gain": "2.9",
-        "AGI_Gain": "1.8",
-        "INT_Gain": "2.9",
-        "range": "400"
+        "STR_GAIN": "2.9",
+        "AGI_GAIN": "1.8",
+        "INT_GAIN": "2.9",
+        "TOTAL_GAIN": "7.6",
+        "RANGE": "400",
+        "MS": "310",
+        "BAT": "1.7"
     },
     {
         "id": 9,
@@ -119,10 +144,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Beastmaster",
         "thumbnail": "./assets/thumbnails/9.png",
         "icon": "./assets/icons/9.png",
-        "STR_Gain": "2.9",
-        "AGI_Gain": "1.6",
-        "INT_Gain": "1.9",
-        "range": "150"
+        "STR_GAIN": "2.9",
+        "AGI_GAIN": "1.6",
+        "INT_GAIN": "1.9",
+        "TOTAL_GAIN": "6.4",
+        "RANGE": "150",
+        "MS": "305",
+        "BAT": "1.7"
     },
     {
         "id": 10,
@@ -133,10 +161,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Bloodseeker",
         "thumbnail": "./assets/thumbnails/10.png",
         "icon": "./assets/icons/10.png",
-        "STR_Gain": "2.7",
-        "AGI_Gain": "3.1",
-        "INT_Gain": "2.0",
-        "range": "150"
+        "STR_GAIN": "2.7",
+        "AGI_GAIN": "3.1",
+        "INT_GAIN": "2.0",
+        "TOTAL_GAIN": "7.8",
+        "RANGE": "150",
+        "MS": "300",
+        "BAT": "1.7"
     },
     {
         "id": 11,
@@ -147,10 +178,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Bounty_Hunter",
         "thumbnail": "./assets/thumbnails/11.png",
         "icon": "./assets/icons/11.png",
-        "STR_Gain": "2.5",
-        "AGI_Gain": "2.6",
-        "INT_Gain": "1.9",
-        "range": "150"
+        "STR_GAIN": "2.5",
+        "AGI_GAIN": "2.6",
+        "INT_GAIN": "1.9",
+        "TOTAL_GAIN": "7.0",
+        "RANGE": "150",
+        "MS": "325",
+        "BAT": "1.7"
     },
     {
         "id": 12,
@@ -161,10 +195,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Brewmaster",
         "thumbnail": "./assets/thumbnails/121.png",
         "icon": "./assets/icons/12.png",
-        "STR_Gain": "3.7",
-        "AGI_Gain": "2.0",
-        "INT_Gain": "1.6",
-        "range": "150"
+        "STR_GAIN": "3.7",
+        "AGI_GAIN": "2.0",
+        "INT_GAIN": "1.6",
+        "TOTAL_GAIN": "7.3",
+        "RANGE": "150",
+        "MS": "310",
+        "BAT": "1.7"
     },
     {
         "id": 13,
@@ -175,10 +212,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Bristleback",
         "thumbnail": "./assets/thumbnails/12.png",
         "icon": "./assets/icons/13.png",
-        "STR_Gain": "2.5",
-        "AGI_Gain": "1.8",
-        "INT_Gain": "2.8",
-        "range": "150"
+        "STR_GAIN": "2.5",
+        "AGI_GAIN": "1.8",
+        "INT_GAIN": "2.8",
+        "TOTAL_GAIN": "7.1",
+        "RANGE": "150",
+        "MS": "295",
+        "BAT": "1.8"
     },
     {
         "id": 14,
@@ -189,10 +229,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Broodmother",
         "thumbnail": "./assets/thumbnails/13.png",
         "icon": "./assets/icons/14.png",
-        "STR_Gain": "3.2",
-        "AGI_Gain": "3.4",
-        "INT_Gain": "2.0",
-        "range": "150"
+        "STR_GAIN": "3.2",
+        "AGI_GAIN": "3.4",
+        "INT_GAIN": "2.0",
+        "TOTAL_GAIN": "8.6",
+        "RANGE": "150",
+        "MS": "280",
+        "BAT": "1.7"
     },
     {
         "id": 15,
@@ -203,10 +246,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Centaur_Warrunner",
         "thumbnail": "./assets/thumbnails/14.png",
         "icon": "./assets/icons/15.png",
-        "STR_Gain": "4.0",
-        "AGI_Gain": "1.0",
-        "INT_Gain": "1.6",
-        "range": "150"
+        "STR_GAIN": "4.0",
+        "AGI_GAIN": "1.0",
+        "INT_GAIN": "1.6",
+        "TOTAL_GAIN": "6.6",
+        "RANGE": "150",
+        "MS": "300",
+        "BAT": "1.7"
     },
     {
         "id": 16,
@@ -217,10 +263,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Chaos_Knight",
         "thumbnail": "./assets/thumbnails/15.png",
         "icon": "./assets/icons/16.png",
-        "STR_Gain": "3.2",
-        "AGI_Gain": "1.4",
-        "INT_Gain": "1.2",
-        "range": "150"
+        "STR_GAIN": "3.2",
+        "AGI_GAIN": "1.4",
+        "INT_GAIN": "1.2",
+        "TOTAL_GAIN": "5.8",
+        "RANGE": "150",
+        "MS": "325",
+        "BAT": "1.7"
     },
     {
         "id": 17,
@@ -231,10 +280,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Chen",
         "thumbnail": "./assets/thumbnails/16.png",
         "icon": "./assets/icons/17.png",
-        "STR_Gain": "2.0",
-        "AGI_Gain": "2.1",
-        "INT_Gain": "3.2",
-        "range": "650"
+        "STR_GAIN": "2.0",
+        "AGI_GAIN": "2.1",
+        "INT_GAIN": "3.2",
+        "TOTAL_GAIN": "7.3",
+        "RANGE": "650",
+        "MS": "300",
+        "BAT": "1.7"
     },
     {
         "id": 18,
@@ -245,10 +297,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Clinkz",
         "thumbnail": "./assets/thumbnails/17.png",
         "icon": "./assets/icons/18.png",
-        "STR_Gain": "2.0",
-        "AGI_Gain": "2.5",
-        "INT_Gain": "2.2",
-        "range": "600"
+        "STR_GAIN": "2.0",
+        "AGI_GAIN": "2.5",
+        "INT_GAIN": "2.2",
+        "TOTAL_GAIN": "6.7",
+        "RANGE": "600",
+        "MS": "290",
+        "BAT": "1.7"
     },
     {
         "id": 19,
@@ -259,10 +314,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Clockwerk",
         "thumbnail": "./assets/thumbnails/18.png",
         "icon": "./assets/icons/19.png",
-        "STR_Gain": "3.5",
-        "AGI_Gain": "2.3",
-        "INT_Gain": "1.5",
-        "range": "150"
+        "STR_GAIN": "3.5",
+        "AGI_GAIN": "2.3",
+        "INT_GAIN": "1.5",
+        "TOTAL_GAIN": "7.3",
+        "RANGE": "150",
+        "MS": "310",
+        "BAT": "1.7"
     },
     {
         "id": 20,
@@ -273,10 +331,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Crystal_Maiden",
         "thumbnail": "./assets/thumbnails/19.png",
         "icon": "./assets/icons/20.png",
-        "STR_Gain": "2.2",
-        "AGI_Gain": "1.6",
-        "INT_Gain": "3.3",
-        "range": "600"
+        "STR_GAIN": "2.2",
+        "AGI_GAIN": "1.6",
+        "INT_GAIN": "3.3",
+        "TOTAL_GAIN": "7.1",
+        "RANGE": "600",
+        "MS": "280",
+        "BAT": "1.7"
     },
     {
         "id": 21,
@@ -287,10 +348,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Dark_Seer",
         "thumbnail": "./assets/thumbnails/20.png",
         "icon": "./assets/icons/21.png",
-        "STR_Gain": "2.6",
-        "AGI_Gain": "1.8",
-        "INT_Gain": "2.7",
-        "range": "150"
+        "STR_GAIN": "2.6",
+        "AGI_GAIN": "1.8",
+        "INT_GAIN": "2.7",
+        "TOTAL_GAIN": "7.1",
+        "RANGE": "150",
+        "MS": "295",
+        "BAT": "1.7"
     },
     {
         "id": 22,
@@ -301,10 +365,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Dark_Willow",
         "thumbnail": "./assets/thumbnails/21.png",
         "icon": "./assets/icons/22.png",
-        "STR_Gain": "2.0",
-        "AGI_Gain": "1.6",
-        "INT_Gain": "3.5",
-        "range": "475"
+        "STR_GAIN": "2.0",
+        "AGI_GAIN": "1.6",
+        "INT_GAIN": "3.5",
+        "TOTAL_GAIN": "7.1",
+        "RANGE": "475",
+        "MS": "290",
+        "BAT": "1.5"
     },
     {
         "id": 23,
@@ -315,10 +382,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Dawnbreaker",
         "thumbnail": "./assets/thumbnails/22.png",
         "icon": "./assets/icons/23.png",
-        "STR_Gain": "3.6",
-        "AGI_Gain": "1.7",
-        "INT_Gain": "2.2",
-        "range": "150"
+        "STR_GAIN": "3.6",
+        "AGI_GAIN": "1.7",
+        "INT_GAIN": "2.2",
+        "TOTAL_GAIN": "7.5",
+        "RANGE": "150",
+        "MS": "310",
+        "BAT": "1.7"
     },
     {
         "id": 24,
@@ -329,10 +399,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Dazzle",
         "thumbnail": "./assets/thumbnails/23.png",
         "icon": "./assets/icons/24.png",
-        "STR_Gain": "2.3",
-        "AGI_Gain": "1.7",
-        "INT_Gain": "3.7",
-        "range": "575"
+        "STR_GAIN": "2.3",
+        "AGI_GAIN": "1.7",
+        "INT_GAIN": "3.7",
+        "TOTAL_GAIN": "7.7",
+        "RANGE": "575",
+        "MS": "305",
+        "BAT": "1.7"
     },
     {
         "id": 25,
@@ -343,10 +416,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Death_Prophet",
         "thumbnail": "./assets/thumbnails/24.png",
         "icon": "./assets/icons/25.png",
-        "STR_Gain": "3.1",
-        "AGI_Gain": "1.8",
-        "INT_Gain": "3.3",
-        "range": "600"
+        "STR_GAIN": "3.1",
+        "AGI_GAIN": "1.8",
+        "INT_GAIN": "3.3",
+        "TOTAL_GAIN": "8.2",
+        "RANGE": "600",
+        "MS": "325",
+        "BAT": "1.7"
     },
     {
         "id": 26,
@@ -357,10 +433,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Disruptor",
         "thumbnail": "./assets/thumbnails/25.png",
         "icon": "./assets/icons/26.png",
-        "STR_Gain": "2.4",
-        "AGI_Gain": "1.4",
-        "INT_Gain": "2.9",
-        "range": "625"
+        "STR_GAIN": "2.4",
+        "AGI_GAIN": "1.4",
+        "INT_GAIN": "2.9",
+        "TOTAL_GAIN": "6.7",
+        "RANGE": "625",
+        "MS": "295",
+        "BAT": "1.7"
     },
     {
         "id": 27,
@@ -371,10 +450,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Doom",
         "thumbnail": "./assets/thumbnails/26.png",
         "icon": "./assets/icons/27.png",
-        "STR_Gain": "3.7",
-        "AGI_Gain": "0.9",
-        "INT_Gain": "1.7",
-        "range": "200"
+        "STR_GAIN": "3.7",
+        "AGI_GAIN": "0.9",
+        "INT_GAIN": "1.7",
+        "TOTAL_GAIN": "6.3",
+        "RANGE": "200",
+        "MS": "285",
+        "BAT": "1.9"
     },
     {
         "id": 28,
@@ -385,10 +467,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Dragon_Knight",
         "thumbnail": "./assets/thumbnails/27.png",
         "icon": "./assets/icons/28.png",
-        "STR_Gain": "3.4",
-        "AGI_Gain": "2.0",
-        "INT_Gain": "1.7",
-        "range": "150"
+        "STR_GAIN": "3.4",
+        "AGI_GAIN": "2.0",
+        "INT_GAIN": "1.7",
+        "TOTAL_GAIN": "7.1",
+        "RANGE": "150",
+        "MS": "310",
+        "BAT": "1.7"
     },
     {
         "id": 29,
@@ -399,10 +484,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Drow_Ranger",
         "thumbnail": "./assets/thumbnails/28.png",
         "icon": "./assets/icons/29.png",
-        "STR_Gain": "1.9",
-        "AGI_Gain": "2.9",
-        "INT_Gain": "1.4",
-        "range": "625"
+        "STR_GAIN": "1.9",
+        "AGI_GAIN": "2.9",
+        "INT_GAIN": "1.4",
+        "TOTAL_GAIN": "6.2",
+        "RANGE": "625",
+        "MS": "295",
+        "BAT": "1.7"
     },
     {
         "id": 30,
@@ -413,10 +501,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Earth_Spirit",
         "thumbnail": "./assets/thumbnails/29.png",
         "icon": "./assets/icons/30.png",
-        "STR_Gain": "3.8",
-        "AGI_Gain": "2.4",
-        "INT_Gain": "2.1",
-        "range": "150"
+        "STR_GAIN": "3.8",
+        "AGI_GAIN": "2.4",
+        "INT_GAIN": "2.1",
+        "TOTAL_GAIN": "8.3",
+        "RANGE": "150",
+        "MS": "290",
+        "BAT": "1.7"
     },
     {
         "id": 31,
@@ -427,10 +518,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Earthshaker",
         "thumbnail": "./assets/thumbnails/30.png",
         "icon": "./assets/icons/31.png",
-        "STR_Gain": "3.7",
-        "AGI_Gain": "1.4",
-        "INT_Gain": "2.1",
-        "range": "150"
+        "STR_GAIN": "3.7",
+        "AGI_GAIN": "1.4",
+        "INT_GAIN": "2.1",
+        "TOTAL_GAIN": "7.2",
+        "RANGE": "150",
+        "MS": "315",
+        "BAT": "1.7"
     },
     {
         "id": 32,
@@ -441,10 +535,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Elder_Titan",
         "thumbnail": "./assets/thumbnails/31.png",
         "icon": "./assets/icons/32.png",
-        "STR_Gain": "3.0",
-        "AGI_Gain": "1.8",
-        "INT_Gain": "1.6",
-        "range": "150"
+        "STR_GAIN": "3.0",
+        "AGI_GAIN": "1.8",
+        "INT_GAIN": "1.6",
+        "TOTAL_GAIN": "6.4",
+        "RANGE": "150",
+        "MS": "310",
+        "BAT": "1.7"
     },
     {
         "id": 33,
@@ -455,10 +552,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Ember_Spirit",
         "thumbnail": "./assets/thumbnails/32.png",
         "icon": "./assets/icons/33.png",
-        "STR_Gain": "2.6",
-        "AGI_Gain": "2.9",
-        "INT_Gain": "2.2",
-        "range": "150"
+        "STR_GAIN": "2.6",
+        "AGI_GAIN": "2.9",
+        "INT_GAIN": "2.2",
+        "TOTAL_GAIN": "7.7",
+        "RANGE": "150",
+        "MS": "305",
+        "BAT": "1.7"
     },
     {
         "id": 34,
@@ -469,10 +569,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Enchantress",
         "thumbnail": "./assets/thumbnails/33.png",
         "icon": "./assets/icons/34.png",
-        "STR_Gain": "1.7",
-        "AGI_Gain": "2.1",
-        "INT_Gain": "3.8",
-        "range": "575"
+        "STR_GAIN": "1.7",
+        "AGI_GAIN": "2.1",
+        "INT_GAIN": "3.8",
+        "TOTAL_GAIN": "7.6",
+        "RANGE": "575",
+        "MS": "320",
+        "BAT": "1.7"
     },
     {
         "id": 35,
@@ -483,10 +586,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Enigma",
         "thumbnail": "./assets/thumbnails/34.png",
         "icon": "./assets/icons/35.png",
-        "STR_Gain": "2.5",
-        "AGI_Gain": "1.0",
-        "INT_Gain": "3.6",
-        "range": "500"
+        "STR_GAIN": "2.5",
+        "AGI_GAIN": "1.0",
+        "INT_GAIN": "3.6",
+        "TOTAL_GAIN": "7.1",
+        "RANGE": "500",
+        "MS": "290",
+        "BAT": "1.7"
     },
     {
         "id": 36,
@@ -497,10 +603,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Faceless_Void",
         "thumbnail": "./assets/thumbnails/35.png",
         "icon": "./assets/icons/36.png",
-        "STR_Gain": "2.4",
-        "AGI_Gain": "3.0",
-        "INT_Gain": "1.5",
-        "range": "150"
+        "STR_GAIN": "2.4",
+        "AGI_GAIN": "3.0",
+        "INT_GAIN": "1.5",
+        "TOTAL_GAIN": "6.9",
+        "RANGE": "150",
+        "MS": "300",
+        "BAT": "1.7"
     },
     {
         "id": 37,
@@ -511,10 +620,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Grimstroke",
         "thumbnail": "./assets/thumbnails/36.png",
         "icon": "./assets/icons/37.png",
-        "STR_Gain": "2.4",
-        "AGI_Gain": "1.9",
-        "INT_Gain": "3.8",
-        "range": "600"
+        "STR_GAIN": "2.4",
+        "AGI_GAIN": "1.9",
+        "INT_GAIN": "3.8",
+        "TOTAL_GAIN": "8.1",
+        "RANGE": "600",
+        "MS": "290",
+        "BAT": "1.7"
     },
     {
         "id": 38,
@@ -525,10 +637,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Gyrocopter",
         "thumbnail": "./assets/thumbnails/37.png",
         "icon": "./assets/icons/38.png",
-        "STR_Gain": "2.5",
-        "AGI_Gain": "3.3",
-        "INT_Gain": "2.4",
-        "range": "365"
+        "STR_GAIN": "2.5",
+        "AGI_GAIN": "3.3",
+        "INT_GAIN": "2.4",
+        "TOTAL_GAIN": "8.2",
+        "RANGE": "365",
+        "MS": "315",
+        "BAT": "1.7"
     },
     {
         "id": 39,
@@ -539,10 +654,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Hoodwink",
         "thumbnail": "./assets/thumbnails/38.png",
         "icon": "./assets/icons/39.png",
-        "STR_Gain": "2.0",
-        "AGI_Gain": "3.6",
-        "INT_Gain": "2.9",
-        "range": "575"
+        "STR_GAIN": "2.0",
+        "AGI_GAIN": "3.6",
+        "INT_GAIN": "2.9",
+        "TOTAL_GAIN": "8.5",
+        "RANGE": "575",
+        "MS": "310",
+        "BAT": "2"
     },
     {
         "id": 40,
@@ -553,10 +671,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Huskar",
         "thumbnail": "./assets/thumbnails/39.png",
         "icon": "./assets/icons/40.png",
-        "STR_Gain": "3.3",
-        "AGI_Gain": "1.5",
-        "INT_Gain": "1.5",
-        "range": "400"
+        "STR_GAIN": "3.3",
+        "AGI_GAIN": "1.5",
+        "INT_GAIN": "1.5",
+        "TOTAL_GAIN": "6.3",
+        "RANGE": "400",
+        "MS": "295",
+        "BAT": "1.6"
     },
     {
         "id": 41,
@@ -567,10 +688,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Invoker",
         "thumbnail": "./assets/thumbnails/40.png",
         "icon": "./assets/icons/41.png",
-        "STR_Gain": "2.4",
-        "AGI_Gain": "1.9",
-        "INT_Gain": "4.6",
-        "range": "600"
+        "STR_GAIN": "2.4",
+        "AGI_GAIN": "1.9",
+        "INT_GAIN": "4.6",
+        "TOTAL_GAIN": "8.9",
+        "RANGE": "600",
+        "MS": "285",
+        "BAT": "1.7"
     },
     {
         "id": 42,
@@ -581,10 +705,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Io",
         "thumbnail": "./assets/thumbnails/41.png",
         "icon": "./assets/icons/42.png",
-        "STR_Gain": "3.0",
-        "AGI_Gain": "1.6",
-        "INT_Gain": "1.7",
-        "range": "500"
+        "STR_GAIN": "3.0",
+        "AGI_GAIN": "1.6",
+        "INT_GAIN": "1.7",
+        "TOTAL_GAIN": "6.3",
+        "RANGE": "500",
+        "MS": "320",
+        "BAT": "1.7"
     },
     {
         "id": 43,
@@ -595,10 +722,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Jakiro",
         "thumbnail": "./assets/thumbnails/42.png",
         "icon": "./assets/icons/43.png",
-        "STR_Gain": "2.8",
-        "AGI_Gain": "1.2",
-        "INT_Gain": "3.0",
-        "range": "400"
+        "STR_GAIN": "2.8",
+        "AGI_GAIN": "1.2",
+        "INT_GAIN": "3.0",
+        "TOTAL_GAIN": "7.0",
+        "RANGE": "400",
+        "MS": "290",
+        "BAT": "1.7"
     },
     {
         "id": 44,
@@ -609,10 +739,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Juggernaut",
         "thumbnail": "./assets/thumbnails/43.png",
         "icon": "./assets/icons/44.png",
-        "STR_Gain": "2.2",
-        "AGI_Gain": "2.8",
-        "INT_Gain": "1.4",
-        "range": "150"
+        "STR_GAIN": "2.2",
+        "AGI_GAIN": "2.8",
+        "INT_GAIN": "1.4",
+        "TOTAL_GAIN": "6.4",
+        "RANGE": "150",
+        "MS": "305",
+        "BAT": "1.4"
     },
     {
         "id": 45,
@@ -623,10 +756,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Keeper_of_the_Light",
         "thumbnail": "./assets/thumbnails/44.png",
         "icon": "./assets/icons/45.png",
-        "STR_Gain": "2.3",
-        "AGI_Gain": "1.6",
-        "INT_Gain": "3.2",
-        "range": "600"
+        "STR_GAIN": "2.3",
+        "AGI_GAIN": "1.6",
+        "INT_GAIN": "3.2",
+        "TOTAL_GAIN": "7.1",
+        "RANGE": "600",
+        "MS": "330",
+        "BAT": "1.7"
     },
     {
         "id": 46,
@@ -637,10 +773,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Kunkka",
         "thumbnail": "./assets/thumbnails/45.png",
         "icon": "./assets/icons/46.png",
-        "STR_Gain": "3.8",
-        "AGI_Gain": "1.6",
-        "INT_Gain": "1.8",
-        "range": "150"
+        "STR_GAIN": "3.8",
+        "AGI_GAIN": "1.6",
+        "INT_GAIN": "1.8",
+        "TOTAL_GAIN": "7.2",
+        "RANGE": "150",
+        "MS": "315",
+        "BAT": "1.7"
     },
     {
         "id": 47,
@@ -651,10 +790,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Legion_Commander",
         "thumbnail": "./assets/thumbnails/46.png",
         "icon": "./assets/icons/47.png",
-        "STR_Gain": "3.3",
-        "AGI_Gain": "1.7",
-        "INT_Gain": "2.2",
-        "range": "150"
+        "STR_GAIN": "3.3",
+        "AGI_GAIN": "1.7",
+        "INT_GAIN": "2.2",
+        "TOTAL_GAIN": "7.2",
+        "RANGE": "150",
+        "MS": "330",
+        "BAT": "1.7"
     },
     {
         "id": 48,
@@ -665,10 +807,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Leshrac",
         "thumbnail": "./assets/thumbnails/47.png",
         "icon": "./assets/icons/48.png",
-        "STR_Gain": "2.5",
-        "AGI_Gain": "2.8",
-        "INT_Gain": "3.5",
-        "range": "575"
+        "STR_GAIN": "2.5",
+        "AGI_GAIN": "2.8",
+        "INT_GAIN": "3.5",
+        "TOTAL_GAIN": "8.8",
+        "RANGE": "575",
+        "MS": "325",
+        "BAT": "1.7"
     },
     {
         "id": 49,
@@ -679,10 +824,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Lich",
         "thumbnail": "./assets/thumbnails/48.png",
         "icon": "./assets/icons/49.png",
-        "STR_Gain": "2.1",
-        "AGI_Gain": "2.0",
-        "INT_Gain": "3.6",
-        "range": "550"
+        "STR_GAIN": "2.1",
+        "AGI_GAIN": "2.0",
+        "INT_GAIN": "3.6",
+        "TOTAL_GAIN": "7.7",
+        "RANGE": "550",
+        "MS": "295",
+        "BAT": "1.7"
     },
     {
         "id": 50,
@@ -693,10 +841,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Lifestealer",
         "thumbnail": "./assets/thumbnails/49.png",
         "icon": "./assets/icons/50.png",
-        "STR_Gain": "2.4",
-        "AGI_Gain": "2.6",
-        "INT_Gain": "1.8",
-        "range": "150"
+        "STR_GAIN": "2.4",
+        "AGI_GAIN": "2.6",
+        "INT_GAIN": "1.8",
+        "TOTAL_GAIN": "6.8",
+        "RANGE": "150",
+        "MS": "320",
+        "BAT": "1.7"
     },
     {
         "id": 51,
@@ -707,10 +858,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Lina",
         "thumbnail": "./assets/thumbnails/50.png",
         "icon": "./assets/icons/51.png",
-        "STR_Gain": "2.4",
-        "AGI_Gain": "2.4",
-        "INT_Gain": "3.8",
-        "range": "670"
+        "STR_GAIN": "2.4",
+        "AGI_GAIN": "2.4",
+        "INT_GAIN": "3.8",
+        "TOTAL_GAIN": "8.6",
+        "RANGE": "670",
+        "MS": "290",
+        "BAT": "1.6"
     },
     {
         "id": 52,
@@ -721,10 +875,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Lion",
         "thumbnail": "./assets/thumbnails/51.png",
         "icon": "./assets/icons/52.png",
-        "STR_Gain": "2.2",
-        "AGI_Gain": "1.5",
-        "INT_Gain": "3.5",
-        "range": "600"
+        "STR_GAIN": "2.2",
+        "AGI_GAIN": "1.5",
+        "INT_GAIN": "3.5",
+        "TOTAL_GAIN": "7.2",
+        "RANGE": "600",
+        "MS": "290",
+        "BAT": "1.7"
     },
     {
         "id": 53,
@@ -735,10 +892,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Lone_Druid",
         "thumbnail": "./assets/thumbnails/52.png",
         "icon": "./assets/icons/53.png",
-        "STR_Gain": "2.5",
-        "AGI_Gain": "2.8",
-        "INT_Gain": "1.4",
-        "range": "550"
+        "STR_GAIN": "2.5",
+        "AGI_GAIN": "2.8",
+        "INT_GAIN": "1.4",
+        "TOTAL_GAIN": "6.7",
+        "RANGE": "550",
+        "MS": "325",
+        "BAT": "1.6"
     },
     {
         "id": 54,
@@ -749,10 +909,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Luna",
         "thumbnail": "./assets/thumbnails/53.png",
         "icon": "./assets/icons/54.png",
-        "STR_Gain": "2.2",
-        "AGI_Gain": "3.4",
-        "INT_Gain": "1.9",
-        "range": "330"
+        "STR_GAIN": "2.2",
+        "AGI_GAIN": "3.4",
+        "INT_GAIN": "1.9",
+        "TOTAL_GAIN": "7.5",
+        "RANGE": "330",
+        "MS": "325",
+        "BAT": "1.7"
     },
     {
         "id": 55,
@@ -763,10 +926,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Lycan",
         "thumbnail": "./assets/thumbnails/54.png",
         "icon": "./assets/icons/55.png",
-        "STR_Gain": "3.4",
-        "AGI_Gain": "1.7",
-        "INT_Gain": "1.7",
-        "range": "150"
+        "STR_GAIN": "3.4",
+        "AGI_GAIN": "1.7",
+        "INT_GAIN": "1.7",
+        "TOTAL_GAIN": "6.8",
+        "RANGE": "150",
+        "MS": "315",
+        "BAT": "1.7"
     },
     {
         "id": 56,
@@ -777,10 +943,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Magnus",
         "thumbnail": "./assets/thumbnails/55.png",
         "icon": "./assets/icons/56.png",
-        "STR_Gain": "3.5",
-        "AGI_Gain": "2.5",
-        "INT_Gain": "2.1",
-        "range": "150"
+        "STR_GAIN": "3.5",
+        "AGI_GAIN": "2.5",
+        "INT_GAIN": "2.1",
+        "TOTAL_GAIN": "8.1",
+        "RANGE": "150",
+        "MS": "305",
+        "BAT": "1.8"
     },
     {
         "id": 57,
@@ -791,10 +960,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Marci",
         "thumbnail": "./assets/thumbnails/122.png",
         "icon": "./assets/icons/57.png",
-        "STR_Gain": "3.3",
-        "AGI_Gain": "2.4",
-        "INT_Gain": "1.9",
-        "range": "150"
+        "STR_GAIN": "3.3",
+        "AGI_GAIN": "2.4",
+        "INT_GAIN": "1.9",
+        "TOTAL_GAIN": "7.6",
+        "RANGE": "150",
+        "MS": "310",
+        "BAT": "1.7"
     },
     {
         "id": 58,
@@ -805,10 +977,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Mars",
         "thumbnail": "./assets/thumbnails/56.png",
         "icon": "./assets/icons/58.png",
-        "STR_Gain": "3.7",
-        "AGI_Gain": "1.7",
-        "INT_Gain": "2.2",
-        "range": "250"
+        "STR_GAIN": "3.7",
+        "AGI_GAIN": "1.7",
+        "INT_GAIN": "2.2",
+        "TOTAL_GAIN": "7.6",
+        "RANGE": "250",
+        "MS": "310",
+        "BAT": "1.8"
     },
     {
         "id": 59,
@@ -819,10 +994,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Medusa",
         "thumbnail": "./assets/thumbnails/57.png",
         "icon": "./assets/icons/59.png",
-        "STR_Gain": "1.5",
-        "AGI_Gain": "3.4",
-        "INT_Gain": "3.4",
-        "range": "600"
+        "STR_GAIN": "1.5",
+        "AGI_GAIN": "3.4",
+        "INT_GAIN": "3.4",
+        "TOTAL_GAIN": "8.3",
+        "RANGE": "600",
+        "MS": "275",
+        "BAT": "1.7"
     },
     {
         "id": 60,
@@ -833,10 +1011,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Meepo",
         "thumbnail": "./assets/thumbnails/58.png",
         "icon": "./assets/icons/60.png",
-        "STR_Gain": "2.2",
-        "AGI_Gain": "2.2",
-        "INT_Gain": "1.9",
-        "range": "150"
+        "STR_GAIN": "2.2",
+        "AGI_GAIN": "2.2",
+        "INT_GAIN": "1.9",
+        "TOTAL_GAIN": "6.3",
+        "RANGE": "150",
+        "MS": "330",
+        "BAT": "1.7"
     },
     {
         "id": 61,
@@ -847,10 +1028,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Mirana",
         "thumbnail": "./assets/thumbnails/59.png",
         "icon": "./assets/icons/61.png",
-        "STR_Gain": "2.2",
-        "AGI_Gain": "3.4",
-        "INT_Gain": "1.9",
-        "range": "630"
+        "STR_GAIN": "2.2",
+        "AGI_GAIN": "3.4",
+        "INT_GAIN": "1.9",
+        "TOTAL_GAIN": "7.5",
+        "RANGE": "630",
+        "MS": "290",
+        "BAT": "1.7"
     },
     {
         "id": 62,
@@ -861,10 +1045,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Monkey_King",
         "thumbnail": "./assets/thumbnails/60.png",
         "icon": "./assets/icons/62.png",
-        "STR_Gain": "2.8",
-        "AGI_Gain": "3.7",
-        "INT_Gain": "1.8",
-        "range": "300"
+        "STR_GAIN": "2.8",
+        "AGI_GAIN": "3.7",
+        "INT_GAIN": "1.8",
+        "TOTAL_GAIN": "8.3",
+        "RANGE": "300",
+        "MS": "300",
+        "BAT": "1.7"
     },
     {
         "id": 63,
@@ -875,10 +1062,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Morphling",
         "thumbnail": "./assets/thumbnails/61.png",
         "icon": "./assets/icons/63.png",
-        "STR_Gain": "3.0",
-        "AGI_Gain": "3.9",
-        "INT_Gain": "1.8",
-        "range": "350"
+        "STR_GAIN": "3.0",
+        "AGI_GAIN": "3.9",
+        "INT_GAIN": "1.8",
+        "TOTAL_GAIN": "8.7",
+        "RANGE": "350",
+        "MS": "285",
+        "BAT": "1.5"
     },
     {
         "id": 64,
@@ -889,10 +1079,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Naga_Siren",
         "thumbnail": "./assets/thumbnails/62.png",
         "icon": "./assets/icons/64.png",
-        "STR_Gain": "2.8",
-        "AGI_Gain": "3.3",
-        "INT_Gain": "2.0",
-        "range": "150"
+        "STR_GAIN": "2.8",
+        "AGI_GAIN": "3.3",
+        "INT_GAIN": "2.0",
+        "TOTAL_GAIN": "8.1",
+        "RANGE": "150",
+        "MS": "330",
+        "BAT": "1.7"
     },
     {
         "id": 65,
@@ -903,10 +1096,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Nature%27s_Prophet",
         "thumbnail": "./assets/thumbnails/63.png",
         "icon": "./assets/icons/65.png",
-        "STR_Gain": "2.6",
-        "AGI_Gain": "3.6",
-        "INT_Gain": "3.7",
-        "range": "600"
+        "STR_GAIN": "2.6",
+        "AGI_GAIN": "3.6",
+        "INT_GAIN": "3.7",
+        "TOTAL_GAIN": "9.9",
+        "RANGE": "600",
+        "MS": "295",
+        "BAT": "1.7"
     },
     {
         "id": 66,
@@ -917,10 +1113,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Necrophos",
         "thumbnail": "./assets/thumbnails/64.png",
         "icon": "./assets/icons/66.png",
-        "STR_Gain": "2.3",
-        "AGI_Gain": "1.3",
-        "INT_Gain": "2.7",
-        "range": "500"
+        "STR_GAIN": "2.3",
+        "AGI_GAIN": "1.3",
+        "INT_GAIN": "2.7",
+        "TOTAL_GAIN": "6.3",
+        "RANGE": "500",
+        "MS": "280",
+        "BAT": "1.7"
     },
     {
         "id": 67,
@@ -931,10 +1130,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Night_Stalker",
         "thumbnail": "./assets/thumbnails/65.png",
         "icon": "./assets/icons/67.png",
-        "STR_Gain": "3.0",
-        "AGI_Gain": "2.2",
-        "INT_Gain": "1.6",
-        "range": "150"
+        "STR_GAIN": "3.0",
+        "AGI_GAIN": "2.2",
+        "INT_GAIN": "1.6",
+        "TOTAL_GAIN": "6.8",
+        "RANGE": "150",
+        "MS": "295",
+        "BAT": "1.7"
     },
     {
         "id": 68,
@@ -945,10 +1147,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Nyx_Assassin",
         "thumbnail": "./assets/thumbnails/66.png",
         "icon": "./assets/icons/68.png",
-        "STR_Gain": "2.5",
-        "AGI_Gain": "2.5",
-        "INT_Gain": "2.1",
-        "range": "150"
+        "STR_GAIN": "2.5",
+        "AGI_GAIN": "2.5",
+        "INT_GAIN": "2.1",
+        "TOTAL_GAIN": "7.1",
+        "RANGE": "150",
+        "MS": "310",
+        "BAT": "1.7"
     },
     {
         "id": 69,
@@ -959,10 +1164,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Ogre_Magi",
         "thumbnail": "./assets/thumbnails/67.png",
         "icon": "./assets/icons/69.png",
-        "STR_Gain": "3.3",
-        "AGI_Gain": "1.5",
-        "INT_Gain": "2.5",
-        "range": "150"
+        "STR_GAIN": "3.3",
+        "AGI_GAIN": "1.5",
+        "INT_GAIN": "2.5",
+        "TOTAL_GAIN": "7.3",
+        "RANGE": "150",
+        "MS": "290",
+        "BAT": "1.7"
     },
     {
         "id": 70,
@@ -973,10 +1181,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Omniknight",
         "thumbnail": "./assets/thumbnails/68.png",
         "icon": "./assets/icons/70.png",
-        "STR_Gain": "3.1",
-        "AGI_Gain": "2.0",
-        "INT_Gain": "2.1",
-        "range": "150"
+        "STR_GAIN": "3.1",
+        "AGI_GAIN": "2.0",
+        "INT_GAIN": "2.1",
+        "TOTAL_GAIN": "7.2",
+        "RANGE": "150",
+        "MS": "315",
+        "BAT": "1.7"
     },
     {
         "id": 71,
@@ -987,10 +1198,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Oracle",
         "thumbnail": "./assets/thumbnails/69.png",
         "icon": "./assets/icons/71.png",
-        "STR_Gain": "2.4",
-        "AGI_Gain": "1.7",
-        "INT_Gain": "3.8",
-        "range": "620"
+        "STR_GAIN": "2.4",
+        "AGI_GAIN": "1.7",
+        "INT_GAIN": "3.8",
+        "TOTAL_GAIN": "7.9",
+        "RANGE": "620",
+        "MS": "295",
+        "BAT": "1.7"
     },
     {
         "id": 72,
@@ -1001,24 +1215,30 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Outworld_Destroyer",
         "thumbnail": "./assets/thumbnails/70.png",
         "icon": "./assets/icons/72.png",
-        "STR_Gain": "2.9",
-        "AGI_Gain": "1.6",
-        "INT_Gain": "4.2",
-        "range": "450"
+        "STR_GAIN": "2.9",
+        "AGI_GAIN": "1.6",
+        "INT_GAIN": "4.2",
+        "TOTAL_GAIN": "8.7",
+        "RANGE": "450",
+        "MS": "320",
+        "BAT": "1.9"
     },
     {
         "id": 73,
         "name": "Pangolier",
-        "lore": "DontÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â© Panlin",
+        "lore": "DontÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â© Panlin",
         "attribute": "AGILITY",
         "attackType": "Melee",
         "wikiLink": "https://dota2.fandom.com/wiki/Pangolier",
         "thumbnail": "./assets/thumbnails/71.png",
         "icon": "./assets/icons/73.png",
-        "STR_Gain": "2.5",
-        "AGI_Gain": "3.2",
-        "INT_Gain": "1.9",
-        "range": "150"
+        "STR_GAIN": "2.5",
+        "AGI_GAIN": "3.2",
+        "INT_GAIN": "1.9",
+        "TOTAL_GAIN": "7.6",
+        "RANGE": "150",
+        "MS": "300",
+        "BAT": "1.7"
     },
     {
         "id": 74,
@@ -1029,10 +1249,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Phantom_Assassin",
         "thumbnail": "./assets/thumbnails/72.png",
         "icon": "./assets/icons/74.png",
-        "STR_Gain": "2.2",
-        "AGI_Gain": "3.4",
-        "INT_Gain": "1.4",
-        "range": "150"
+        "STR_GAIN": "2.2",
+        "AGI_GAIN": "3.4",
+        "INT_GAIN": "1.4",
+        "TOTAL_GAIN": "7.0",
+        "RANGE": "150",
+        "MS": "305",
+        "BAT": "1.7"
     },
     {
         "id": 75,
@@ -1043,10 +1266,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Phantom_Lancer",
         "thumbnail": "./assets/thumbnails/73.png",
         "icon": "./assets/icons/75.png",
-        "STR_Gain": "2.2",
-        "AGI_Gain": "3.2",
-        "INT_Gain": "2.0",
-        "range": "150"
+        "STR_GAIN": "2.2",
+        "AGI_GAIN": "3.2",
+        "INT_GAIN": "2.0",
+        "TOTAL_GAIN": "7.4",
+        "RANGE": "150",
+        "MS": "290",
+        "BAT": "1.7"
     },
     {
         "id": 76,
@@ -1057,10 +1283,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Phoenix",
         "thumbnail": "./assets/thumbnails/74.png",
         "icon": "./assets/icons/76.png",
-        "STR_Gain": "3.6",
-        "AGI_Gain": "1.5",
-        "INT_Gain": "1.8",
-        "range": "525"
+        "STR_GAIN": "3.6",
+        "AGI_GAIN": "1.5",
+        "INT_GAIN": "1.8",
+        "TOTAL_GAIN": "6.9",
+        "RANGE": "525",
+        "MS": "280",
+        "BAT": "1.7"
     },
     {
         "id": 77,
@@ -1071,10 +1300,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Primal_Beast",
         "thumbnail": "./assets/thumbnails/123.png",
         "icon": "./assets/icons/77.png",
-        "STR_Gain": "4.3",
-        "AGI_Gain": "1.0",
-        "INT_Gain": "1.4",
-        "range": "150"
+        "STR_GAIN": "4.3",
+        "AGI_GAIN": "1.0",
+        "INT_GAIN": "1.4",
+        "TOTAL_GAIN": "6.7",
+        "RANGE": "150",
+        "MS": "305",
+        "BAT": "1.8"
     },
     {
         "id": 78,
@@ -1085,10 +1317,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Puck",
         "thumbnail": "./assets/thumbnails/75.png",
         "icon": "./assets/icons/78.png",
-        "STR_Gain": "2.4",
-        "AGI_Gain": "2.5",
-        "INT_Gain": "3.5",
-        "range": "550"
+        "STR_GAIN": "2.4",
+        "AGI_GAIN": "2.5",
+        "INT_GAIN": "3.5",
+        "TOTAL_GAIN": "8.4",
+        "RANGE": "550",
+        "MS": "290",
+        "BAT": "1.7"
     },
     {
         "id": 79,
@@ -1099,10 +1334,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Pudge",
         "thumbnail": "./assets/thumbnails/76.png",
         "icon": "./assets/icons/79.png",
-        "STR_Gain": "3.0",
-        "AGI_Gain": "1.4",
-        "INT_Gain": "1.8",
-        "range": "175"
+        "STR_GAIN": "3.0",
+        "AGI_GAIN": "1.4",
+        "INT_GAIN": "1.8",
+        "TOTAL_GAIN": "6.2",
+        "RANGE": "175",
+        "MS": "280",
+        "BAT": "1.7"
     },
     {
         "id": 80,
@@ -1113,10 +1351,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Pugna",
         "thumbnail": "./assets/thumbnails/77.png",
         "icon": "./assets/icons/80.png",
-        "STR_Gain": "2.0",
-        "AGI_Gain": "1.3",
-        "INT_Gain": "5.2",
-        "range": "630"
+        "STR_GAIN": "2.0",
+        "AGI_GAIN": "1.3",
+        "INT_GAIN": "5.2",
+        "TOTAL_GAIN": "8.5",
+        "RANGE": "630",
+        "MS": "330",
+        "BAT": "1.7"
     },
     {
         "id": 81,
@@ -1127,10 +1368,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Queen_of_Pain",
         "thumbnail": "./assets/thumbnails/78.png",
         "icon": "./assets/icons/81.png",
-        "STR_Gain": "2.4",
-        "AGI_Gain": "2.5",
-        "INT_Gain": "3.4",
-        "range": "550"
+        "STR_GAIN": "2.4",
+        "AGI_GAIN": "2.5",
+        "INT_GAIN": "3.4",
+        "TOTAL_GAIN": "8.3",
+        "RANGE": "550",
+        "MS": "290",
+        "BAT": "1.5"
     },
     {
         "id": 82,
@@ -1141,10 +1385,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Razor",
         "thumbnail": "./assets/thumbnails/79.png",
         "icon": "./assets/icons/82.png",
-        "STR_Gain": "2.8",
-        "AGI_Gain": "2.6",
-        "INT_Gain": "2.2",
-        "range": "475"
+        "STR_GAIN": "2.8",
+        "AGI_GAIN": "2.6",
+        "INT_GAIN": "2.2",
+        "TOTAL_GAIN": "7.6",
+        "RANGE": "475",
+        "MS": "290",
+        "BAT": "1.7"
     },
     {
         "id": 83,
@@ -1155,10 +1402,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Riki",
         "thumbnail": "./assets/thumbnails/80.png",
         "icon": "./assets/icons/83.png",
-        "STR_Gain": "2.6",
-        "AGI_Gain": "1.4",
-        "INT_Gain": "1.3",
-        "range": "150"
+        "STR_GAIN": "2.6",
+        "AGI_GAIN": "1.4",
+        "INT_GAIN": "1.3",
+        "TOTAL_GAIN": "5.3",
+        "RANGE": "150",
+        "MS": "315",
+        "BAT": "1.7"
     },
     {
         "id": 84,
@@ -1169,10 +1419,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Rubick",
         "thumbnail": "./assets/thumbnails/81.png",
         "icon": "./assets/icons/84.png",
-        "STR_Gain": "2.0",
-        "AGI_Gain": "2.5",
-        "INT_Gain": "3.1",
-        "range": "550"
+        "STR_GAIN": "2.0",
+        "AGI_GAIN": "2.5",
+        "INT_GAIN": "3.1",
+        "TOTAL_GAIN": "7.6",
+        "RANGE": "550",
+        "MS": "290",
+        "BAT": "1.7"
     },
     {
         "id": 85,
@@ -1183,10 +1436,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Sand_King",
         "thumbnail": "./assets/thumbnails/82.png",
         "icon": "./assets/icons/85.png",
-        "STR_Gain": "2.7",
-        "AGI_Gain": "1.8",
-        "INT_Gain": "1.8",
-        "range": "150"
+        "STR_GAIN": "2.7",
+        "AGI_GAIN": "1.8",
+        "INT_GAIN": "1.8",
+        "TOTAL_GAIN": "6.3",
+        "RANGE": "150",
+        "MS": "290",
+        "BAT": "1.7"
     },
     {
         "id": 86,
@@ -1197,10 +1453,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Shadow_Demon",
         "thumbnail": "./assets/thumbnails/83.png",
         "icon": "./assets/icons/86.png",
-        "STR_Gain": "2.6",
-        "AGI_Gain": "2.2",
-        "INT_Gain": "3.6",
-        "range": "500"
+        "STR_GAIN": "2.6",
+        "AGI_GAIN": "2.2",
+        "INT_GAIN": "3.6",
+        "TOTAL_GAIN": "8.4",
+        "RANGE": "500",
+        "MS": "290",
+        "BAT": "1.7"
     },
     {
         "id": 87,
@@ -1211,10 +1470,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Shadow_Fiend",
         "thumbnail": "./assets/thumbnails/84.png",
         "icon": "./assets/icons/87.png",
-        "STR_Gain": "2.7",
-        "AGI_Gain": "3.5",
-        "INT_Gain": "2.2",
-        "range": "500"
+        "STR_GAIN": "2.7",
+        "AGI_GAIN": "3.5",
+        "INT_GAIN": "2.2",
+        "TOTAL_GAIN": "8.4",
+        "RANGE": "500",
+        "MS": "305",
+        "BAT": "1.6"
     },
     {
         "id": 88,
@@ -1225,10 +1487,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Shadow_Shaman",
         "thumbnail": "./assets/thumbnails/85.png",
         "icon": "./assets/icons/88.png",
-        "STR_Gain": "2.3",
-        "AGI_Gain": "1.6",
-        "INT_Gain": "3.5",
-        "range": "400"
+        "STR_GAIN": "2.3",
+        "AGI_GAIN": "1.6",
+        "INT_GAIN": "3.5",
+        "TOTAL_GAIN": "7.4",
+        "RANGE": "400",
+        "MS": "285",
+        "BAT": "1.7"
     },
     {
         "id": 89,
@@ -1239,10 +1504,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Silencer",
         "thumbnail": "./assets/thumbnails/86.png",
         "icon": "./assets/icons/89.png",
-        "STR_Gain": "2.4",
-        "AGI_Gain": "2.4",
-        "INT_Gain": "2.9",
-        "range": "600"
+        "STR_GAIN": "2.4",
+        "AGI_GAIN": "2.4",
+        "INT_GAIN": "2.9",
+        "TOTAL_GAIN": "7.7",
+        "RANGE": "600",
+        "MS": "290",
+        "BAT": "1.7"
     },
     {
         "id": 90,
@@ -1253,10 +1521,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Skywrath_Mage",
         "thumbnail": "./assets/thumbnails/87.png",
         "icon": "./assets/icons/90.png",
-        "STR_Gain": "2.0",
-        "AGI_Gain": "0.8",
-        "INT_Gain": "4.1",
-        "range": "625"
+        "STR_GAIN": "2.0",
+        "AGI_GAIN": "0.8",
+        "INT_GAIN": "4.1",
+        "TOTAL_GAIN": "6.9",
+        "RANGE": "625",
+        "MS": "325",
+        "BAT": "1.7"
     },
     {
         "id": 91,
@@ -1267,10 +1538,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Slardar",
         "thumbnail": "./assets/thumbnails/88.png",
         "icon": "./assets/icons/91.png",
-        "STR_Gain": "3.6",
-        "AGI_Gain": "2.4",
-        "INT_Gain": "1.5",
-        "range": "150"
+        "STR_GAIN": "3.6",
+        "AGI_GAIN": "2.4",
+        "INT_GAIN": "1.5",
+        "TOTAL_GAIN": "7.5",
+        "RANGE": "150",
+        "MS": "300",
+        "BAT": "1.7"
     },
     {
         "id": 92,
@@ -1281,10 +1555,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Slark",
         "thumbnail": "./assets/thumbnails/89.png",
         "icon": "./assets/icons/92.png",
-        "STR_Gain": "1.9",
-        "AGI_Gain": "1.7",
-        "INT_Gain": "1.7",
-        "range": "150"
+        "STR_GAIN": "1.9",
+        "AGI_GAIN": "1.7",
+        "INT_GAIN": "1.7",
+        "TOTAL_GAIN": "5.3",
+        "RANGE": "150",
+        "MS": "300",
+        "BAT": "1.7"
     },
     {
         "id": 93,
@@ -1295,10 +1572,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Snapfire",
         "thumbnail": "./assets/thumbnails/90.png",
         "icon": "./assets/icons/93.png",
-        "STR_Gain": "3.5",
-        "AGI_Gain": "1.9",
-        "INT_Gain": "2.2",
-        "range": "500"
+        "STR_GAIN": "3.5",
+        "AGI_GAIN": "1.9",
+        "INT_GAIN": "2.2",
+        "TOTAL_GAIN": "7.6",
+        "RANGE": "500",
+        "MS": "300",
+        "BAT": "1.6"
     },
     {
         "id": 94,
@@ -1309,10 +1589,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Sniper",
         "thumbnail": "./assets/thumbnails/91.png",
         "icon": "./assets/icons/94.png",
-        "STR_Gain": "2.0",
-        "AGI_Gain": "3.2",
-        "INT_Gain": "2.6",
-        "range": "550"
+        "STR_GAIN": "2.0",
+        "AGI_GAIN": "3.2",
+        "INT_GAIN": "2.6",
+        "TOTAL_GAIN": "7.8",
+        "RANGE": "550",
+        "MS": "285",
+        "BAT": "1.7"
     },
     {
         "id": 95,
@@ -1323,10 +1606,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Spectre",
         "thumbnail": "./assets/thumbnails/92.png",
         "icon": "./assets/icons/95.png",
-        "STR_Gain": "2.5",
-        "AGI_Gain": "2.1",
-        "INT_Gain": "1.9",
-        "range": "150"
+        "STR_GAIN": "2.5",
+        "AGI_GAIN": "2.1",
+        "INT_GAIN": "1.9",
+        "TOTAL_GAIN": "6.5",
+        "RANGE": "150",
+        "MS": "290",
+        "BAT": "1.7"
     },
     {
         "id": 96,
@@ -1337,10 +1623,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Spirit_Breaker",
         "thumbnail": "./assets/thumbnails/93.png",
         "icon": "./assets/icons/96.png",
-        "STR_Gain": "3.0",
-        "AGI_Gain": "1.7",
-        "INT_Gain": "1.8",
-        "range": "150"
+        "STR_GAIN": "3.0",
+        "AGI_GAIN": "1.7",
+        "INT_GAIN": "1.8",
+        "TOTAL_GAIN": "6.5",
+        "RANGE": "150",
+        "MS": "295",
+        "BAT": "1.9"
     },
     {
         "id": 97,
@@ -1351,10 +1640,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Storm_Spirit",
         "thumbnail": "./assets/thumbnails/94.png",
         "icon": "./assets/icons/97.png",
-        "STR_Gain": "2.0",
-        "AGI_Gain": "1.9",
-        "INT_Gain": "3.9",
-        "range": "480"
+        "STR_GAIN": "2.0",
+        "AGI_GAIN": "1.9",
+        "INT_GAIN": "3.9",
+        "TOTAL_GAIN": "7.8",
+        "RANGE": "480",
+        "MS": "285",
+        "BAT": "1.7"
     },
     {
         "id": 98,
@@ -1365,10 +1657,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Sven",
         "thumbnail": "./assets/thumbnails/95.png",
         "icon": "./assets/icons/98.png",
-        "STR_Gain": "3.2",
-        "AGI_Gain": "2.2",
-        "INT_Gain": "1.3",
-        "range": "150"
+        "STR_GAIN": "3.2",
+        "AGI_GAIN": "2.2",
+        "INT_GAIN": "1.3",
+        "TOTAL_GAIN": "6.7",
+        "RANGE": "150",
+        "MS": "325",
+        "BAT": "1.9"
     },
     {
         "id": 99,
@@ -1379,10 +1674,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Techies",
         "thumbnail": "./assets/thumbnails/96.png",
         "icon": "./assets/icons/99.png",
-        "STR_Gain": "2.5",
-        "AGI_Gain": "1.3",
-        "INT_Gain": "3.0",
-        "range": "700"
+        "STR_GAIN": "2.5",
+        "AGI_GAIN": "1.3",
+        "INT_GAIN": "3.0",
+        "TOTAL_GAIN": "6.8",
+        "RANGE": "700",
+        "MS": "300",
+        "BAT": "1.7"
     },
     {
         "id": 100,
@@ -1393,10 +1691,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Templar_Assassin",
         "thumbnail": "./assets/thumbnails/97.png",
         "icon": "./assets/icons/100.png",
-        "STR_Gain": "2.4",
-        "AGI_Gain": "3.2",
-        "INT_Gain": "2.0",
-        "range": "160"
+        "STR_GAIN": "2.4",
+        "AGI_GAIN": "3.2",
+        "INT_GAIN": "2.0",
+        "TOTAL_GAIN": "7.6",
+        "RANGE": "160",
+        "MS": "305",
+        "BAT": "1.7"
     },
     {
         "id": 101,
@@ -1407,10 +1708,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Terrorblade",
         "thumbnail": "./assets/thumbnails/98.png",
         "icon": "./assets/icons/101.png",
-        "STR_Gain": "2.0",
-        "AGI_Gain": "4.0",
-        "INT_Gain": "1.6",
-        "range": "150"
+        "STR_GAIN": "2.0",
+        "AGI_GAIN": "4.0",
+        "INT_GAIN": "1.6",
+        "TOTAL_GAIN": "7.6",
+        "RANGE": "150",
+        "MS": "315",
+        "BAT": "1.5"
     },
     {
         "id": 102,
@@ -1421,10 +1725,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Tidehunter",
         "thumbnail": "./assets/thumbnails/99.png",
         "icon": "./assets/icons/102.png",
-        "STR_Gain": "3.5",
-        "AGI_Gain": "1.5",
-        "INT_Gain": "1.7",
-        "range": "150"
+        "STR_GAIN": "3.5",
+        "AGI_GAIN": "1.5",
+        "INT_GAIN": "1.7",
+        "TOTAL_GAIN": "6.7",
+        "RANGE": "150",
+        "MS": "300",
+        "BAT": "1.7"
     },
     {
         "id": 103,
@@ -1435,10 +1742,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Timbersaw",
         "thumbnail": "./assets/thumbnails/100.png",
         "icon": "./assets/icons/103.png",
-        "STR_Gain": "3.2",
-        "AGI_Gain": "1.6",
-        "INT_Gain": "2.7",
-        "range": "150"
+        "STR_GAIN": "3.2",
+        "AGI_GAIN": "1.6",
+        "INT_GAIN": "2.7",
+        "TOTAL_GAIN": "7.5",
+        "RANGE": "150",
+        "MS": "290",
+        "BAT": "1.7"
     },
     {
         "id": 104,
@@ -1449,10 +1759,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Tinker",
         "thumbnail": "./assets/thumbnails/101.png",
         "icon": "./assets/icons/104.png",
-        "STR_Gain": "2.5",
-        "AGI_Gain": "1.2",
-        "INT_Gain": "3.3",
-        "range": "500"
+        "STR_GAIN": "2.5",
+        "AGI_GAIN": "1.2",
+        "INT_GAIN": "3.3",
+        "TOTAL_GAIN": "7.0",
+        "RANGE": "500",
+        "MS": "290",
+        "BAT": "1.7"
     },
     {
         "id": 105,
@@ -1463,10 +1776,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Tiny",
         "thumbnail": "./assets/thumbnails/102.png",
         "icon": "./assets/icons/105.png",
-        "STR_Gain": "4.0",
-        "AGI_Gain": "0.0",
-        "INT_Gain": "2.2",
-        "range": "150"
+        "STR_GAIN": "4.0",
+        "AGI_GAIN": "0.0",
+        "INT_GAIN": "2.2",
+        "TOTAL_GAIN": "6.2",
+        "RANGE": "150",
+        "MS": "295",
+        "BAT": "1.7"
     },
     {
         "id": 106,
@@ -1477,10 +1793,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Treant_Protector",
         "thumbnail": "./assets/thumbnails/103.png",
         "icon": "./assets/icons/106.png",
-        "STR_Gain": "3.4",
-        "AGI_Gain": "2.0",
-        "INT_Gain": "1.8",
-        "range": "150"
+        "STR_GAIN": "3.4",
+        "AGI_GAIN": "2.0",
+        "INT_GAIN": "1.8",
+        "TOTAL_GAIN": "7.2",
+        "RANGE": "150",
+        "MS": "285",
+        "BAT": "1.9"
     },
     {
         "id": 107,
@@ -1491,10 +1810,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Troll_Warlord",
         "thumbnail": "./assets/thumbnails/104.png",
         "icon": "./assets/icons/107.png",
-        "STR_Gain": "2.5",
-        "AGI_Gain": "3.3",
-        "INT_Gain": "1.0",
-        "range": "500"
+        "STR_GAIN": "2.5",
+        "AGI_GAIN": "3.3",
+        "INT_GAIN": "1.0",
+        "TOTAL_GAIN": "6.8",
+        "RANGE": "500",
+        "MS": "290",
+        "BAT": "1.7"
     },
     {
         "id": 108,
@@ -1505,10 +1827,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Tusk",
         "thumbnail": "./assets/thumbnails/105.png",
         "icon": "./assets/icons/108.png",
-        "STR_Gain": "3.9",
-        "AGI_Gain": "2.1",
-        "INT_Gain": "1.7",
-        "range": "150"
+        "STR_GAIN": "3.9",
+        "AGI_GAIN": "2.1",
+        "INT_GAIN": "1.7",
+        "TOTAL_GAIN": "7.7",
+        "RANGE": "150",
+        "MS": "310",
+        "BAT": "1.7"
     },
     {
         "id": 109,
@@ -1519,10 +1844,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Underlord",
         "thumbnail": "./assets/thumbnails/106.png",
         "icon": "./assets/icons/109.png",
-        "STR_Gain": "3.0",
-        "AGI_Gain": "1.6",
-        "INT_Gain": "2.3",
-        "range": "200"
+        "STR_GAIN": "3.0",
+        "AGI_GAIN": "1.6",
+        "INT_GAIN": "2.3",
+        "TOTAL_GAIN": "6.9",
+        "RANGE": "200",
+        "MS": "290",
+        "BAT": "1.7"
     },
     {
         "id": 110,
@@ -1533,10 +1861,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Undying",
         "thumbnail": "./assets/thumbnails/107.png",
         "icon": "./assets/icons/110.png",
-        "STR_Gain": "2.8",
-        "AGI_Gain": "1.2",
-        "INT_Gain": "2.8",
-        "range": "150"
+        "STR_GAIN": "2.8",
+        "AGI_GAIN": "1.2",
+        "INT_GAIN": "2.8",
+        "TOTAL_GAIN": "6.8",
+        "RANGE": "150",
+        "MS": "300",
+        "BAT": "1.7"
     },
     {
         "id": 111,
@@ -1547,10 +1878,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Ursa",
         "thumbnail": "./assets/thumbnails/108.png",
         "icon": "./assets/icons/111.png",
-        "STR_Gain": "2.6",
-        "AGI_Gain": "2.6",
-        "INT_Gain": "1.5",
-        "range": "150"
+        "STR_GAIN": "2.6",
+        "AGI_GAIN": "2.6",
+        "INT_GAIN": "1.5",
+        "TOTAL_GAIN": "6.7",
+        "RANGE": "150",
+        "MS": "310",
+        "BAT": "1.7"
     },
     {
         "id": 112,
@@ -1561,10 +1895,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Vengeful_Spirit",
         "thumbnail": "./assets/thumbnails/109.png",
         "icon": "./assets/icons/112.png",
-        "STR_Gain": "2.6",
-        "AGI_Gain": "3.2",
-        "INT_Gain": "1.5",
-        "range": "400"
+        "STR_GAIN": "2.6",
+        "AGI_GAIN": "3.2",
+        "INT_GAIN": "1.5",
+        "TOTAL_GAIN": "7.3",
+        "RANGE": "400",
+        "MS": "295",
+        "BAT": "1.7"
     },
     {
         "id": 113,
@@ -1575,10 +1912,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Venomancer",
         "thumbnail": "./assets/thumbnails/110.png",
         "icon": "./assets/icons/113.png",
-        "STR_Gain": "2.1",
-        "AGI_Gain": "2.8",
-        "INT_Gain": "1.8",
-        "range": "450"
+        "STR_GAIN": "2.1",
+        "AGI_GAIN": "2.8",
+        "INT_GAIN": "1.8",
+        "TOTAL_GAIN": "6.7",
+        "RANGE": "450",
+        "MS": "280",
+        "BAT": "1.7"
     },
     {
         "id": 114,
@@ -1589,10 +1929,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Viper",
         "thumbnail": "./assets/thumbnails/111.png",
         "icon": "./assets/icons/114.png",
-        "STR_Gain": "2.4",
-        "AGI_Gain": "2.7",
-        "INT_Gain": "2.0",
-        "range": "575"
+        "STR_GAIN": "2.4",
+        "AGI_GAIN": "2.7",
+        "INT_GAIN": "2.0",
+        "TOTAL_GAIN": "7.1",
+        "RANGE": "575",
+        "MS": "275",
+        "BAT": "1.7"
     },
     {
         "id": 115,
@@ -1603,10 +1946,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Visage",
         "thumbnail": "./assets/thumbnails/112.png",
         "icon": "./assets/icons/115.png",
-        "STR_Gain": "2.8",
-        "AGI_Gain": "1.3",
-        "INT_Gain": "2.9",
-        "range": "600"
+        "STR_GAIN": "2.8",
+        "AGI_GAIN": "1.3",
+        "INT_GAIN": "2.9",
+        "TOTAL_GAIN": "7.0",
+        "RANGE": "600",
+        "MS": "285",
+        "BAT": "1.7"
     },
     {
         "id": 116,
@@ -1617,10 +1963,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Void_Spirit",
         "thumbnail": "./assets/thumbnails/113.png",
         "icon": "./assets/icons/116.png",
-        "STR_Gain": "2.6",
-        "AGI_Gain": "2.2",
-        "INT_Gain": "3.1",
-        "range": "200"
+        "STR_GAIN": "2.6",
+        "AGI_GAIN": "2.2",
+        "INT_GAIN": "3.1",
+        "TOTAL_GAIN": "7.9",
+        "RANGE": "200",
+        "MS": "295",
+        "BAT": "1.7"
     },
     {
         "id": 117,
@@ -1631,10 +1980,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Warlock",
         "thumbnail": "./assets/thumbnails/114.png",
         "icon": "./assets/icons/117.png",
-        "STR_Gain": "3.0",
-        "AGI_Gain": "1.0",
-        "INT_Gain": "3.1",
-        "range": "600"
+        "STR_GAIN": "3.0",
+        "AGI_GAIN": "1.0",
+        "INT_GAIN": "3.1",
+        "TOTAL_GAIN": "7.1",
+        "RANGE": "600",
+        "MS": "290",
+        "BAT": "1.7"
     },
     {
         "id": 118,
@@ -1645,10 +1997,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Weaver",
         "thumbnail": "./assets/thumbnails/115.png",
         "icon": "./assets/icons/118.png",
-        "STR_Gain": "2.0",
-        "AGI_Gain": "3.1",
-        "INT_Gain": "2.0",
-        "range": "425"
+        "STR_GAIN": "2.0",
+        "AGI_GAIN": "3.1",
+        "INT_GAIN": "2.0",
+        "TOTAL_GAIN": "7.1",
+        "RANGE": "425",
+        "MS": "275",
+        "BAT": "1.8"
     },
     {
         "id": 119,
@@ -1659,10 +2014,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Windranger",
         "thumbnail": "./assets/thumbnails/116.png",
         "icon": "./assets/icons/119.png",
-        "STR_Gain": "3.0",
-        "AGI_Gain": "1.4",
-        "INT_Gain": "3.6",
-        "range": "600"
+        "STR_GAIN": "3.0",
+        "AGI_GAIN": "1.4",
+        "INT_GAIN": "3.6",
+        "TOTAL_GAIN": "8.0",
+        "RANGE": "600",
+        "MS": "290",
+        "BAT": "1.5"
     },
     {
         "id": 120,
@@ -1673,10 +2031,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Winter_Wyvern",
         "thumbnail": "./assets/thumbnails/117.png",
         "icon": "./assets/icons/120.png",
-        "STR_Gain": "2.6",
-        "AGI_Gain": "1.7",
-        "INT_Gain": "3.6",
-        "range": "425"
+        "STR_GAIN": "2.6",
+        "AGI_GAIN": "1.7",
+        "INT_GAIN": "3.6",
+        "TOTAL_GAIN": "7.9",
+        "RANGE": "425",
+        "MS": "285",
+        "BAT": "1.7"
     },
     {
         "id": 121,
@@ -1687,10 +2048,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Witch_Doctor",
         "thumbnail": "./assets/thumbnails/118.png",
         "icon": "./assets/icons/121.png",
-        "STR_Gain": "2.3",
-        "AGI_Gain": "1.4",
-        "INT_Gain": "3.3",
-        "range": "600"
+        "STR_GAIN": "2.3",
+        "AGI_GAIN": "1.4",
+        "INT_GAIN": "3.3",
+        "TOTAL_GAIN": "7.0",
+        "RANGE": "600",
+        "MS": "300",
+        "BAT": "1.7"
     },
     {
         "id": 122,
@@ -1701,10 +2065,13 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Wraith_King",
         "thumbnail": "./assets/thumbnails/119.png",
         "icon": "./assets/icons/122.png",
-        "STR_Gain": "3.0",
-        "AGI_Gain": "1.7",
-        "INT_Gain": "1.6",
-        "range": "150"
+        "STR_GAIN": "3.0",
+        "AGI_GAIN": "1.7",
+        "INT_GAIN": "1.6",
+        "TOTAL_GAIN": "6.3",
+        "RANGE": "150",
+        "MS": "315",
+        "BAT": "1.7"
     },
     {
         "id": 123,
@@ -1715,9 +2082,12 @@
         "wikiLink": "https://dota2.fandom.com/wiki/Zeus",
         "thumbnail": "./assets/thumbnails/120.png",
         "icon": "./assets/icons/123.png",
-        "STR_Gain": "2.1",
-        "AGI_Gain": "1.2",
-        "INT_Gain": "3.3",
-        "range": "380"
+        "STR_GAIN": "2.1",
+        "AGI_GAIN": "1.2",
+        "INT_GAIN": "3.3",
+        "TOTAL_GAIN": "6.6",
+        "RANGE": "380",
+        "MS": "315",
+        "BAT": "1.7"
     }
 ]

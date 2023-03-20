@@ -6,6 +6,7 @@ from enum import IntEnum
 json_elements = []
 
 class Stats(IntEnum):
+    heroName = 0,
     ATTRIBUTE = 4,
     STR = 7,
     STR_GAIN = 8,
@@ -53,16 +54,48 @@ def getOffset(elem : str):
 def getStat(stat : Stats, elem : list[str], offset: int):
     return elem[pos(stat, offset)]
 
+def getName(elem : list[str]):
+    name = ""
+    for e in elem:
+        if e != "minimap":
+            if name != "":
+                name += " "
+            name += e
+        else:
+            return name
+
+def convertToUrlFormat(hero : str):
+    formattedHero = hero.replace(' ', '_')
+    formattedHero = formattedHero.replace('\'','%27')
+    return formattedHero
+
+def determineAttackType(name : str, range : int):
+    melee  = 'Melee'
+    ranged = 'Ranged'
+    MAX_MELEE_RANGE = 300
+    MAX_RANGED_RANGE = 700
+
+    if range <= 300 and name != "Templar Assassin":
+        return melee
+    else:
+        return ranged
+
 i = 1
 
 with open('scripts\HeroStats.txt') as stats_file:
     for line in stats_file:
         elem = line.split() 
         offset = getOffset(elem)
+        hero = getName(elem)
 
         j_elem = {
-            'id' : i,
-            #Stats.ATTRIBUTE.name: getStat(Stats.ATTRIBUTE, elem, offset).upper(),
+            Stats.heroName.name: hero,
+            'wikiLink': f'https://dota2.fandom.com/wiki/{convertToUrlFormat(hero)}',
+            'thumbnail': f'./assets/thumbnails/{hero}.png',
+            'icon': f'./assets/icons/{hero}.png',
+            Stats.RANGE.name: getStat(Stats.RANGE, elem, offset),
+            'attackType': determineAttackType(hero, int(getStat(Stats.RANGE, elem, offset))),
+            Stats.ATTRIBUTE.name: getStat(Stats.ATTRIBUTE, elem, offset).upper(),
             Stats.STR.name: getStat(Stats.STR, elem, offset),
             Stats.STR_GAIN.name: "%.1f" % float(getStat(Stats.STR_GAIN, elem, offset)),
             Stats.STR_30.name: getStat(Stats.STR_30, elem, offset),
@@ -79,9 +112,8 @@ with open('scripts\HeroStats.txt') as stats_file:
             Stats.ARMOR.name: getStat(Stats.ARMOR, elem, offset),
             Stats.DMG_MIN.name: getStat(Stats.DMG_MIN, elem, offset),
             Stats.DMG_MAX.name: getStat(Stats.DMG_MAX, elem, offset),
-            Stats.RANGE.name: getStat(Stats.RANGE, elem, offset),
             Stats.ATTACKSPEED.name: getStat(Stats.ATTACKSPEED, elem, offset),
-            Stats.BAT.name: getStat(Stats.BAT, elem, offset),
+            Stats.BAT.name: "%.1f" % float(getStat(Stats.BAT, elem, offset)),
             Stats.ATK_PT.name: getStat(Stats.ATK_PT, elem, offset),
             Stats.ATK_BS.name: getStat(Stats.ATK_BS, elem, offset),
             Stats.VIS_DAY.name: getStat(Stats.VIS_DAY, elem, offset),

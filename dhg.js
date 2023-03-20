@@ -32,26 +32,6 @@ client.on('message', (receivedMessage) => {
     }
 })
 
-class Hero{
-    constructor(id, heroName, lore, attribute, attackType, wikiLink, thumbnail, icon, str, agi, int, total, range, ms, bat){
-        this.id = id;
-        this.heroName = heroName;
-        this.lore = lore;
-        this.attribute = attribute;
-        this.attackType = attackType;
-        this.wikiLink = wikiLink;
-        this.thumbnail = thumbnail;
-        this.icon = icon;
-        this.str = str;
-        this.agi = agi;
-        this.int = int;
-        this.total = total;
-        this.range = range;
-        this.ms = ms;
-        this.bat = bat;
-    }
-}
-
 const attributeColor = new Map([
     [constants.STR, "#ce4419"],
     [constants.AGI, "#3acd43"],
@@ -75,19 +55,34 @@ const attributeToArray = new Map([
     [constants.INT, INT_Array]
 ])
 
+class Hero{
+    constructor(heroName, ATTRIBUTE, attackType, wikiLink, thumbnail, icon, str, agi, int, total, range, ms, bat){
+        this.heroName = heroName;
+        this.attribute = ATTRIBUTE;
+        this.attackType = attackType;
+        this.wikiLink = wikiLink;
+        this.thumbnail = thumbnail;
+        this.icon = icon;
+        this.str = str;
+        this.agi = agi;
+        this.int = int;
+        this.total = total;
+        this.range = range;
+        this.ms = ms;
+        this.bat = bat;
+    }
+}
+
 //Called once on load
-const onLoad = (function () { 
+const onLoadx = (function () { 
     const fs = require('fs')
-    const rawdata = fs.readFileSync('heroes.json')
+    const rawdata = fs.readFileSync('all_stats.json')
     let heroList = JSON.parse(rawdata)
 
-    let i = 0
-    while(i < heroList.length){
+    for (let i = 0; i < heroList.length; i++){
         let hero = new Hero(
-            heroList[i].id,
-            heroList[i].name,
-            heroList[i].lore,
-            heroList[i].attribute,
+            heroList[i].heroName,
+            heroList[i].ATTRIBUTE,
             heroList[i].attackType,
             heroList[i].wikiLink,
             heroList[i].thumbnail,
@@ -100,13 +95,12 @@ const onLoad = (function () {
             heroList[i].MS,
             heroList[i].BAT
         )
-        attributeToArray.get(heroList[i].attribute).push(heroList[i])
-        All_Heroes.push(heroList[i])
-        i++
+        attributeToArray.get(heroList[i].ATTRIBUTE).push(hero)
+        All_Heroes.push(hero)
     }
-    // console.log(`Strength array length: ${STR_Array.length}`)
-    // console.log(`Agility array length: ${AGI_Array.length}`)
-    // console.log(`Intelligence array length: ${INT_Array.length}`)
+    console.log(`Strength array length: ${STR_Array.length}`)
+    console.log(`Agility array length: ${AGI_Array.length}`)
+    console.log(`Intelligence array length: ${INT_Array.length}`)
 })();
 
 function processCommand(receivedMessage) {
@@ -178,13 +172,23 @@ function sendHeroMessage(hero, receivedMessage){
         .addFields(
             { name: 'STR', value: hero.str, inline: true },
             { name: 'AGI', value: hero.agi, inline: true },
-            { name: 'INT', value: hero.int, inline: true }
+            { name: 'INT', value: hero.int, inline: true },
         )
         .addFields(
             { name: 'RNG', value: hero.range, inline: true },
-            { name: 'BAT', value: hero.bat, inline: true },
+            { name: 'BAT', value: hero.bat ,inline: true },
             { name: 'MS', value: hero.ms, inline: true },
         )
+        // .addFields(
+        //     { name: 'RNG', value: hero.range, inline: true },
+        //     { name: 'AS', value: 120,inline: true },
+        //     { name: 'MS', value: hero.ms, inline: true },
+        // )
+        // .addFields(
+        //     { name: 'MIN', value: 45, inline: true },
+        //     { name: 'MAX', value: 49, inline: true },
+        //     { name: 'BAT', value: hero.bat,inline: true },
+        // )
     receivedMessage.channel.send(embedMsg)
 }
 

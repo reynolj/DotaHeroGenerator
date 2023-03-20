@@ -33,12 +33,16 @@ with open('all_stats.json') as json_file:
             "TOTAL_GAIN": p['TOTAL_GAIN'],
             "RANGE": p['RANGE'],
             "MS": p['MS'],
-            "BAT": p['BAT']
+            "BAT": p['BAT'],
+            "AMR": p['ARMOR'],
+            "DMG_MIN": p["DMG_MIN"],
+            "DMG_MAX": p["DMG_MAX"],
+            "AS": p["ATTACKSPEED"]
         }
         stats.append(element)
 
-i = 0
-while (i < 123):
+i = 1
+while (i < 124):
     element = {
         'id': heros[i]['id'],
         'name': heros[i]['name'],
@@ -54,7 +58,10 @@ while (i < 123):
         "TOTAL_GAIN": stats[i]['TOTAL_GAIN'],
         "RANGE": stats[i]['RANGE'],
         "MS": stats[i]['MS'],
-        "BAT": stats[i]['BAT']
+        "BAT": stats[i]['BAT'],
+        "wikiLink": f'https://dota2.fandom.com/wiki/{name}',
+        "thumbnail": f'./assets/thumbnails/{id}.png',
+        "icon": f'./assets/icons/{id}.png'
     }
     heros_stats.append(element)
     i += 1
