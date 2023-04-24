@@ -27,7 +27,6 @@ client.on('message', (receivedMessage) => {
     }
     //receivedMessage.channel.send("Message received, " + receivedMessage.author.toString() + ": " + receivedMessage.content)
     if (receivedMessage.content.startsWith("!")) {
-        //doCommand(receivedMessage)
         processCommand(receivedMessage)
     }
 })
@@ -95,7 +94,9 @@ const onLoadx = (function () {
             heroList[i].MS,
             heroList[i].BAT
         )
-        attributeToArray.get(heroList[i].ATTRIBUTE).push(hero)
+        if (hero.heroName != 'Monkey King'){
+            attributeToArray.get(heroList[i].ATTRIBUTE).push(hero)
+        }
         All_Heroes.push(hero)
     }
     console.log(`Strength array length: ${STR_Array.length}`)
@@ -163,7 +164,6 @@ function sendHeroMessage(hero, receivedMessage){
     let embedMsg = new Discord.MessageEmbed()
         .setColor(attributeColor.get(hero.attribute))
         .setTitle(`${hero.heroName}`)
-        //.setDescription(hero.lore)
         .setURL(hero.wikiLink)
         .attachFiles(footerImg)
         .attachFiles(heroImg)
@@ -234,85 +234,3 @@ function randomCommand(arguments, receivedMessage) {
             receivedMessage.channel.send(`Invalid number of arguments. 0, 1, and 2 are the valid number of arguments`)
     }
 }
-
-// function doCommand(receivedMessage){
-//     let msg = processCommandOther(receivedMessage)
-
-//     receivedMessage.channel.send(msg)
-// }
-
-// function processCommandOther(receivedMessage) {
-//     let fullCommand = receivedMessage.content.substr(1)
-//     let splitCommand = fullCommand.split(" ")
-//     let primaryCommand = splitCommand[0].toLowerCase()
-//     let arguments = splitCommand.slice(1)
-
-//     switch (primaryCommand){
-//         case "help":
-//             return getHelpMsg(arguments, receivedMessage)
-//         case "random":
-//             return getRandomMsg(arguments, receivedMessage)
-//         case "hero":
-//             if (arguments < 1){
-//                 return "Error. No HeroName after !hero command."
-//             }
-//             toFind = arguments[0];
-//             result = findHero(toFind);
-//             if (result){
-//                 return getHeroMsg(result, receivedMessage)
-//             }
-//             return "Could not find hero: " + toFind
-//         default:
-//             return "Unknown command. Try !help`"
-//     }
-// }
-
-// function getHelpMsg(arguments, receivedMessage) {
-//     return "Try !random or !random [Strength, Agility, Intelligence] or !hero HeroName"
-// }
-
-// function getHeroMsg(){
-//     return ""
-// }
-
-// function getRandomMsg(arguments, receivedMessage) {
-//     switch (arguments.length){
-//         case 0:
-//             let randomHeroList = [
-//                 randomHero(constants.STR),
-//                 randomHero(constants.AGI),
-//                 randomHero(constants.INT)
-//             ];
-    
-//             randomHeroList.forEach(hero => {
-//                 printHero(hero)
-//                 sendHeroMessage(hero, receivedMessage)
-//             })
-//             break;
-//         case 1:
-//             attribute = arguments[0].toUpperCase()
-
-//             if (constants.attributeAliases.includes(attribute)){
-//                 attribute = constants.getActualAttribute(attribute)
-//                 sendHeroMessage(randomHero(attribute), receivedMessage)
-//             }
-//             else {
-//                 receivedMessage.channel.send(`${arguments[0]} is not a valid attribute. Valid attributes are ${constants.attributeAliases}`)
-//             }
-//             break;
-//         case 2:
-//             attribute1 = arguments[0].toUpperCase()
-//             attribute2 = arguments[1].toUpperCase()
-//             if (constants.attributeAliases.includes(attribute1) && constants.attributeAliases.includes(attribute2)){
-//                 attribute1 = getActualAttribute(attribute1)
-//                 attribute2 = getActualAttribute(attribute2)
-//                 sendHeroMessage(randomHero(attribute1), receivedMessage)
-//                 sendHeroMessage(randomHero(attribute2), receivedMessage)
-//             } 
-//             else {
-//                 receivedMessage.channel.send(`You enterd an invalid attribute. Valid attributes are ${constants.attributeAliases}`)
-//             }
-//             break;
-//         default:
-//             receivedMessage.channel.send(`Invalid number of arguments. 0, 1, and 2 are the valid number of arguments`)
-//     }
