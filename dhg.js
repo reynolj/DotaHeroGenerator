@@ -3,7 +3,7 @@ const Discord = require('discord.js')
 const client = new Discord.Client()
 const credentials = require('./credentials')
 const constants = require('./constants')
-const { getActualAttribute, STR, AGI, INT } = require('./constants')
+const { getActualAttribute, STR, AGI, INT, UNI } = require('./constants')
 
 // You'll need a credentials file
 client.login(credentials.login_hash)
@@ -34,24 +34,28 @@ client.on('message', (receivedMessage) => {
 const attributeColor = new Map([
     [constants.STR, "#ce4419"],
     [constants.AGI, "#3acd43"],
-    [constants.INT, "#2bc1d2"]
+    [constants.INT, "#2bc1d2"],
+    [constants.UNI, "#a442f5"]
 ])
 
 const attributeToImage = new Map([
     [constants.STR, `./assets/attributes/strength.png`],
     [constants.AGI, `./assets/attributes/agility.png`],
-    [constants.INT, `./assets/attributes/intelligence.png`]
+    [constants.INT, `./assets/attributes/intelligence.png`],
+    [constants.UNI, `./assets/attributes/universal.png`]
 ])
 
 var STR_Array = new Array();
 var AGI_Array = new Array();
 var INT_Array = new Array();
+var UNI_Array = new Array();
 var All_Heroes = new Array();
 
 const attributeToArray = new Map([
     [constants.STR, STR_Array],
     [constants.AGI, AGI_Array],
-    [constants.INT, INT_Array]
+    [constants.INT, INT_Array],
+    [constants.UNI, UNI_Array]
 ])
 
 class Hero{
@@ -102,6 +106,7 @@ const onLoadx = (function () {
     console.log(`Strength array length: ${STR_Array.length}`)
     console.log(`Agility array length: ${AGI_Array.length}`)
     console.log(`Intelligence array length: ${INT_Array.length}`)
+    console.log(`Universal array length: ${UNI_Array.length}`)
 })();
 
 function processCommand(receivedMessage) {
@@ -198,7 +203,8 @@ function randomCommand(arguments, receivedMessage) {
             let randomHeroList = [
                 randomHero(constants.STR),
                 randomHero(constants.AGI),
-                randomHero(constants.INT)
+                randomHero(constants.INT),
+                randomHero(constants.UNI)
             ];
     
             randomHeroList.forEach(hero => {
