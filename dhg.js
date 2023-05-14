@@ -35,7 +35,7 @@ const attributeColor = new Map([
     [constants.STR, "#ce4419"],
     [constants.AGI, "#3acd43"],
     [constants.INT, "#2bc1d2"],
-    [constants.UNI, "#a442f5"]
+    [constants.UNI, "#FFFF00"]
 ])
 
 const attributeToImage = new Map([
@@ -93,7 +93,7 @@ const onLoadx = (function () {
             heroList[i].STR_GAIN,
             heroList[i].AGI_GAIN,
             heroList[i].INT_GAIN,
-            heroList[i].TOTAL_GAIN,
+            (+heroList[i].STR_GAIN + +heroList[i].AGI_GAIN + +heroList[i].INT_GAIN).toFixed(1),
             heroList[i].RANGE,
             heroList[i].MS,
             heroList[i].BAT
@@ -135,6 +135,12 @@ function processCommand(receivedMessage) {
             }
             receivedMessage.channel.send("Could not find hero: " + toFind)
             break;
+        case "ranged":
+                rangedCommand(arguments, receivedMessage)
+            break;
+        case "melee":
+                meleeCommand(arguments, receivedMessage)
+            break;
         default:
             receivedMessage.channel.send("Unknown command. Try !help`")
     }
@@ -156,13 +162,30 @@ function printHero(hero){
     console.log(hero.heroName)
 }
 
-function randomHero(attribute){
+function randomHero(attribute) {
     let array = attributeToArray.get(attribute)
     let index = Math.floor(Math.random()*array.length);
     return array[index]
 }
 
-function sendHeroMessage(hero, receivedMessage){
+function randomRanged(attribute) {
+    let hero = randomHero(attribute)
+    while (hero.attackType != 'Ranged'){ 
+        hero = randomHero(attribute)
+    }
+    return hero
+}
+
+function randomMelee(attribute) {
+    let hero = randomHero(attribute)
+    while (hero.attackType != 'Melee'){ 
+        console.log(hero.heroName)
+        hero = randomHero(attribute)
+    }
+    return hero
+}
+
+function sendHeroMessage(hero, receivedMessage) {
     //const footerImg = new Discord.MessageAttachment(attributeToImage.get(hero.attribute), "attribute.png")
     const footerImg = new Discord.MessageAttachment(`${hero.icon}`, "icon.png")
     const heroImg = new Discord.MessageAttachment(`${hero.thumbnail}`, "hero.png")
@@ -195,6 +218,33 @@ function sendHeroMessage(hero, receivedMessage){
         //     { name: 'BAT', value: hero.bat,inline: true },
         // )
     receivedMessage.channel.send(embedMsg)
+}
+
+function rangedCommand(arguments, receivedMessage) {
+    let randomRangedList = [
+        randomRanged(constants.STR),
+        randomRanged(constants.AGI),
+        randomRanged(constants.INT),
+        randomRanged(constants.UNI),
+    ]
+
+    randomRangedList.forEach(hero => {
+        printHero(hero)
+        sendHeroMessage(hero, receivedMessage)
+    })
+}
+
+function meleeCommand(arguments, receivedMessage) {
+    let randomMeleeList = [
+        randomMelee(constants.STR),
+        randomMelee(constants.AGI),
+        randomMelee(constants.UNI),
+    ]
+
+    randomMeleeList.forEach(hero => {
+        printHero(hero)
+        sendHeroMessage(hero, receivedMessage)
+    })
 }
 
 function randomCommand(arguments, receivedMessage) {
@@ -240,3 +290,4 @@ function randomCommand(arguments, receivedMessage) {
             receivedMessage.channel.send(`Invalid number of arguments. 0, 1, and 2 are the valid number of arguments`)
     }
 }
+
