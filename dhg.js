@@ -239,7 +239,7 @@ function meleeCommand(arguments, receivedMessage) {
         randomMelee(constants.STR),
         randomMelee(constants.AGI),
         randomMelee(constants.UNI),
-    ]
+    ] 
 
     randomMeleeList.forEach(hero => {
         printHero(hero)
